@@ -16,6 +16,12 @@ body {
   background: rgb(44, 44, 44);
 }
 
+#navbar {
+  background-color: rgb(129, 129, 129);
+  padding: 20px;
+  border-radius: 20px;
+}
+
 #navbar ul {
   display: flex;
   align-items: center;
@@ -31,17 +37,15 @@ body {
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-  color: rgb(129, 129, 129);
+  color: rgb(255, 255, 255);
   transition: 0.3s ease;
 }
 
 #navbar ul li a:hover,
 #navbar ul li a.active {
-  color: white;
-  background-color: rgb(129, 129, 129);
-  padding: 20px;
-  border-radius: 10px;
+  color: rgb(44, 44, 44);
 }
+
 
 
 
