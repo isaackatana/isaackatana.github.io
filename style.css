@@ -16,6 +16,12 @@ body {
   background: rgb(44, 44, 44);
 }
 
+#navbar {
+  background-color: rgb(129, 129, 129);
+  padding: 20px;
+  border-radius: 10px;
+}
+
 #navbar ul {
   display: flex;
   align-items: center;
@@ -31,18 +37,25 @@ body {
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-  color: rgb(129, 129, 129);
+  color: rgb(44, 44, 44);
   transition: 0.3s ease;
 }
 
 #navbar ul li a:hover,
 #navbar ul li a.active {
   color: white;
-  background-color: rgb(129, 129, 129);
-  padding: 20px;
-  border-radius: 10px;
 }
 
+#hero {
+  background-image: url(images/hero.png) ;
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 
-
+}
 /*# sourceMappingURL=style.css.map */
