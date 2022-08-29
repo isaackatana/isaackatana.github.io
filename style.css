@@ -8,7 +8,7 @@
 .hero {
   height: 100vh;
   width: 100%;
-  background-image: url(/images/hero.png);
+  background-image: url(/images/eyezaq.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -30,7 +30,7 @@ nav {
 }
 
 span {
-  color: brown;
+  color: #4b4b4b;
 }
 
 nav ul li {
@@ -52,7 +52,7 @@ nav ul li a:hover {
 }
 
 .btn {
-  background-color: brown;
+  background-color: #4b4b4b;
   color: white;
   text-decoration: none;
   border: 2px solid transparent;
@@ -86,7 +86,7 @@ h3 {
 }
 
 h4 {
-  color: blueviolet;
+  color: white;
   letter-spacing: 2px;
   font-size: 20px;
 }
@@ -101,7 +101,7 @@ h4 {
   display: inline-block;
   width: 100%;
   padding: 14px 13px 14px 15px;
-  border: 2px solid brown;
+  border: 2px solid #4b4b4b;
   outline: none;
   border-radius: 30px;
 }
@@ -113,9 +113,9 @@ h4 {
   border: none;
   padding: 10px 30px;
   border-radius: 30px;
-  background-color: brown;
+  background-color: #4b4b4b;
   color: white;
-  box-shadow:  0px 0px 5px #000, 0px 0px 15px #858585;
+  box-shadow:  0px 0px 5px rgb(94, 94, 94), 0px 0px 15px #b6b6b6;
   top: 6px;
   right: 6px;
 }
@@ -123,7 +123,7 @@ h4 {
 .about {
   width: 100%;
   padding: 100px 0px;
-  background-color: #191919;
+  background-color: #8d8d8d;
 }
 
 .about img {
@@ -160,7 +160,7 @@ h4 {
 }
 
 .about-text p {
-  color: #fcfc;
+  color: white;
   letter-spacing: 1px;
   line-height: 28px;
   font-size: 18px;
@@ -168,7 +168,7 @@ h4 {
 }
 
 button {
-  background-color: aquamarine;
+  background-color: #4b4b4b;
   color: white;
   text-decoration: none;
   border: 2px solid transparent;
@@ -180,12 +180,12 @@ button {
 
 button:hover {
   background-color: transparent;
-  border: 2px solid brown;
+  border: 2px solid #4b4b4b;
   cursor: pointer;
 }
 
 .service {
-  background: #101010;
+  background: #4b4b4b;
   width: 100%;
   padding: 100px 0px;
 }
@@ -209,7 +209,7 @@ button:hover {
   height: 365px;
   width: 335px;
   padding: 20px 35px;
-  background: #191919;
+  background: #4b4b4b;
   border-radius: 20px;
   margin: 15px;
   position: relative;
@@ -222,23 +222,23 @@ button:hover {
   display: block;
   text-align: center;
   margin: 25px 0px;
-  color: #f9004d;
+  color: white;
 }
 
 h5 {
-  color: white;
+  color: #8d8d8d;
   font-size: 23px;
   margin-bottom: 15px;
 }
 
 .pra p {
-  color: #fcfc;
+  color: white;
   font-size: 16px;
   margin-bottom: 25px;
 }
 
 .card .button {
-  background-color: aquamarine;
+  background-color: #8d8d8d;
   color: white;
   text-decoration: none;
   border: 2px solid transparent;
@@ -250,14 +250,14 @@ h5 {
 
 .card .button:hover {
   background-color: transparent;
-  border: 2px solid brown;
+  border: 2px solid #8d8d8d;
   cursor: pointer;
 }
 
 .contact-me {
   width: 100%;
   height: 290px;
-  background: #191919;
+  background: #8d8d8d;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -272,7 +272,7 @@ h5 {
 }
 
 .contact-me .button-two {
-  background-color: brown;
+  background-color: #4b4b4b;
   color: white;
   text-decoration: none;
   border: 2px solid transparent;
@@ -284,7 +284,7 @@ h5 {
 
 .contact-me .button-two:hover {
   background-color: transparent;
-  border: 2px solid brown;
+  border: 2px solid #4b4b4b;
   cursor: pointer;
 }
 
@@ -292,7 +292,7 @@ footer {
   position: relative;
   width: 100%;
   height: 400px;
-  background: #101010;
+  background: #4b4b4b;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -324,7 +324,7 @@ footer p:nth-child(2) {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f9004d;
+  background-color: #8d8d8d;
   border-radius: 50%;
   margin: 22px 10px;
   color: white;
@@ -339,7 +339,7 @@ footer p:nth-child(2) {
 
 .end {
   position: absolute;
-  color: #f9004d;
+  color: #8d8d8d;
   bottom: 35px;
   font-size: 14px;
 }
