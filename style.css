@@ -47,8 +47,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: brown;
-  transition: 4s;
+  color: #4b4b4b;
+  transition: 0.4s;
 }
 
 .btn {
@@ -115,7 +115,6 @@ h4 {
   border-radius: 30px;
   background-color: #4b4b4b;
   color: white;
-  box-shadow:  0px 0px 5px rgb(94, 94, 94), 0px 0px 15px #b6b6b6;
   top: 6px;
   right: 6px;
 }
