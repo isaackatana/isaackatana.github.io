@@ -343,6 +343,14 @@ footer p:nth-child(2) {
   font-size: 14px;
 }
 
+.end a {
+
+  text-decoration: none;
+  color: #8d8d8d;
+  font-weight: bold;
+}
+
+
 
 
 
