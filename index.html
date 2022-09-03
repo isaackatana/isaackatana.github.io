@@ -5,110 +5,158 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac Katana</title>
-    <link rel = "icon" href = 
-    "images/logo.png" 
-            type = "image/x-icon">
+    <link rel="icon" href="images/icon.png" type="image/gif">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/0d466f69eb.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
 
-    <div class="hero">
+    <div id="header">
+
+        <div class="container">
+
+            <nav>
+                <img src="images/logo.png" class="logo" alt="">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Isaac</span><br>Katana From Kenya</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+<!--------------- about --------------->
+
+    <div id="about">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="about-col-1">
+
+                    <img src="images/user.png" alt="">
+
+                </div>
+
+                <div class="about-col-2">
+
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                    <div class="tab-titles">
+
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+
+                            <li><span>Web Development</span><br>Web app Development</li>
+
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team lead at Start LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/Ux Design Executive at coin</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart ecommerce</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id="education">
+
+                        <ul>
+                            <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2016</span><br>MBA from MIT Bangalore</li>
+                            <li><span>2014</span><br>BBA from ISM</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<!--------------- services --------------->
+
+    <div id="services">
+        <div class="container">
+
+            <h1 class="sub-title">My Services</h1>
+
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <a href="#">Learn more</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
         
-        <nav>
-            <img src="images/logo.png" width="50px" alt="">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-            <a href="#" class="btn">Subscribe</a>
-        </nav>
-
-        <div class="content">
-            <h4>Hello, my name is</h4>
-            <h1>Isaac <span>Katana</span></h1>
-            <h3>I'm a Web Developer.</h3>
-            <div class="newslatter">
-                <form>
-                    <input type="email" name="email" id="mail" placeholder="Enter Your Email">
-                    <input type="submit" name="submit" value="Lets Start">
-                </form>
-            </div>
-
-        </div>
-
-    </div>
-
-    <section class="about">
-        <div class="main">
-            <img src="images/eyezaq.jpg" alt="">
-            <div class="about-text">
-                <h2>About me</h2>
-                <h5>Developer <span>& Designer</span></h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                <button type="button">Let's Talk</button>
-            </div>
-        </div>
-    </section>
-
-    <div class="box">
-        <div class="card">
-            <i class="fas fa-bars"></i>
-            <h5>Graphic Design</h5>
-            <div class="pra">
-                <p>packages and web page editors now use Lorem Ipsum as their default model text.</p>
-                <p style="text-align: center;">
-                    <a class="button" href="#">Read More</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="card">
-            <i class="far fa-user"></i>
-            <h5>Web Design</h5>
-            <div class="pra">
-                <p>packages and web page editors now use Lorem Ipsum as their default model text.</p>
-                <p style="text-align: center;">
-                    <a class="button" href="#">Read More</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="card">
-            <i class="fas fa-bell"></i>
-            <h5>Web Development</h5>
-            <div class="pra">
-                <p>packages and web page editors now use Lorem Ipsum as their default model text.</p>
-                <p style="text-align: center;">
-                    <a class="button" href="#">Read More</a>
-                </p>
-            </div>
-        </div>
-    </div>
-  
-    <div class="contact-me">
-    <p>Let Me Make You A Beautiful Website</p>
-    <a class="button-two" href="#">Hire Me</a>
-    </div>
-
-    <footer>
-    <p>Isaac Katana</p>
-    <p>For more HTML, CSS, and coding tutorial - click on the link below to subscribe to my channel:</p>
-    <div class="social">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-square-behance"></i></a>
-    </div>
-    <p class="end">© 2022 Designed & Developed by <a href="isaackatana.github.io">Isaac Katana</a></p>
-    </footer>
-
+</script>
+    
 </body>
-
 </html>
