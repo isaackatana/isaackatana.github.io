@@ -176,6 +176,7 @@ header .burger .line3 {
 }
 .blog-posts .container .s-post img {
   width: 250px;
+  height: 140px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
