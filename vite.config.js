@@ -6,5 +6,5 @@ import VitePluginSass from 'vite-plugin-sass'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), VitePluginSass()],
-  base: "/isaackatana",
+  base: "/isaac-katana",
 })
