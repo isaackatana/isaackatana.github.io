@@ -62,42 +62,6 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className='s-post'>
-              <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Technology_Trends.jpg" alt="" />
-              <div>
-                <h4>Tech Tips: WiFi can be used to hack your phone</h4>
-                <div>
-                  <FontAwesomeIcon icon={faEllipsis} />
-                </div>
-              </div>
-            </div>
-            <div className='s-post'>
-              <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Technology_Trends.jpg" alt="" />
-              <div>
-                <h4>Tech Tips: WiFi can be used to hack your phone</h4>
-                <div>
-                  <FontAwesomeIcon icon={faEllipsis} />
-                </div>
-              </div>
-            </div>
-            <div className='s-post'>
-              <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Technology_Trends.jpg" alt="" />
-              <div>
-                <h4>Tech Tips: WiFi can be used to hack your phone</h4>
-                <div>
-                  <FontAwesomeIcon icon={faEllipsis} />
-                </div>
-              </div>
-            </div>
-            <div className='s-post'>
-              <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Technology_Trends.jpg" alt="" />
-              <div>
-                <h4>Tech Tips: WiFi can be used to hack your phone</h4>
-                <div>
-                  <FontAwesomeIcon icon={faEllipsis} />
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
