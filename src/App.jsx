@@ -62,6 +62,15 @@ function App() {
                 </div>
               </div>
             </div>
+            <div className='s-post'>
+              <img src="https://i0.wp.com/kenyayote.com/wp-content/uploads/2018/01/Bonfire-Adventures-travel-agency-in-kenya.jpg?ssl=1" alt="" />
+              <div>
+                <h4>Tech Tips: WiFi can be used to hack your phone</h4>
+                <div>
+                  <FontAwesomeIcon icon={faEllipsis} />
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
