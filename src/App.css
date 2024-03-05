@@ -9,7 +9,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 80px;
+  padding: 20px 80px;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -207,7 +207,7 @@ header .burger .line3 {
 }
 
 .newsletter {
-  padding: 20px 80px;
+  padding: 30px 80px;
   background: url("https://images7.alphacoders.com/133/1337527.png");
   background-position: center;
   background-size: cover;
