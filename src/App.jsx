@@ -3,9 +3,6 @@ import { faFacebook, faGithub, faInstagram, faXTwitter } from '@fortawesome/free
 import { faEllipsis } from '@fortawesome/free-solid-svg-icons'
 import './App.css'
 import Logo from './assets/logo.svg'
-
-// import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Home from './pages/Home'
@@ -65,7 +62,7 @@ function App() {
             <div className='s-post'>
               <img src="https://i0.wp.com/kenyayote.com/wp-content/uploads/2018/01/Bonfire-Adventures-travel-agency-in-kenya.jpg?ssl=1" alt="" />
               <div>
-                <h4>Tech Tips: WiFi can be used to hack your phone</h4>
+                <h4>Holiday Tips: Places to visit when in africa </h4>
                 <div>
                   <FontAwesomeIcon icon={faEllipsis} />
                 </div>
