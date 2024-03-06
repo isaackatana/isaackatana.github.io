@@ -143,6 +143,15 @@ header .burger div {
   padding-bottom: 20px;
   color: rgb(51, 51, 51);
 }
+.portfolio .container {
+  height: 400px;
+}
+.portfolio .container .s-project {
+  background-color: rgb(51, 51, 51);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
 
 .blog-posts {
   padding: 20px 80px;
