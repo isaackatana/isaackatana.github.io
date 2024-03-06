@@ -44,15 +44,18 @@ header nav ul {
 }
 @media (max-width: 425px) {
   header nav ul {
+    display: flex;
     flex-direction: column;
+    align-items: right;
+    justify-content: right;
     position: fixed;
-    right: 100%;
+    right: 0;
     top: 69px;
     background-color: black;
     height: 100vh;
     width: 100%;
     align-items: center;
-    padding: 20px;
+    gap: 0;
   }
 }
 header nav ul li {
@@ -124,15 +127,6 @@ header .burger div {
   margin: 5px;
   border-radius: 3px;
 }
-header .burger .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-header .burger .line2 {
-  opacity: 0;
-}
-header .burger .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
 
 .hero {
   background: url("https://scontent.fmba3-1.fna.fbcdn.net/v/t39.30808-6/415033492_3678480379050474_8613237829220930751_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeETVBM2ybfwQpIIY1QS1xJhLv7xllGhPQEu_vGWUaE9AZWrCX4snBRv7SBb7DGJEQ0AF9Ah4o0AKSMT-Vw6T_Uc&_nc_ohc=VqVEDbD8e0sAX9x3MWe&_nc_oc=AQnrdyrtW-fVhLeddu8KD5U7pY1AOD2HJ1u_9CtgnvSQ74y-ICz_ffMG_HtYGo9oMw4&_nc_ht=scontent.fmba3-1.fna&oh=00_AfBimeCvOzMOpG2PoN4lj9nmxH4zym7B4w5lMNV_5PXw_w&oe=65EA6189");
@@ -145,7 +139,7 @@ header .burger .line3 {
 .portfolio {
   padding: 20px 80px;
 }
-.portfolio h2 {
+.portfolio h1 {
   padding-bottom: 20px;
   color: rgb(51, 51, 51);
 }
