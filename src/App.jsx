@@ -4,7 +4,6 @@ import { faEllipsis } from '@fortawesome/free-solid-svg-icons'
 import './App.css'
 import Logo from './assets/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
 

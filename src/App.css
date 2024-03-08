@@ -38,6 +38,18 @@ header nav {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 425px) {
+  header nav {
+    position: fixed;
+    right: 100%;
+    top: 69px;
+    background-color: rgb(51, 51, 51);
+    height: 100vh;
+    width: 100%;
+    gap: 0;
+    justify-content: right;
+  }
+}
 header nav ul {
   display: flex;
   gap: 20px;
@@ -48,14 +60,7 @@ header nav ul {
     flex-direction: column;
     align-items: right;
     justify-content: right;
-    position: fixed;
-    right: 0;
-    top: 69px;
-    background-color: black;
-    height: 100vh;
-    width: 100%;
-    align-items: center;
-    gap: 0;
+    margin: 20px 80px;
   }
 }
 header nav ul li {
@@ -138,6 +143,11 @@ header .burger div {
 
 .portfolio {
   padding: 20px 80px;
+}
+@media (max-width: 425px) {
+  .portfolio {
+    padding: 20px;
+  }
 }
 .portfolio h1 {
   padding-bottom: 20px;
