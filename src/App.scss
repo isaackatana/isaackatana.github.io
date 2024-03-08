@@ -151,20 +151,20 @@ header {
             border-radius: 3px;
         }
 
-        // .line1 {
-        //     transform: rotate(-45deg) translate(-5px, 6px);
-        // }
-        // .line2 {
-        //     opacity: 0;
-        // }
-        // .line3 {
-        //     transform: rotate(45deg) translate(-5px, -6px);
-        // }
+        .active .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        .active .line2 {
+            opacity: 0;
+        }
+        .active .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
     }
 }
 
 .hero {
-    background: url("https://scontent.fmba3-1.fna.fbcdn.net/v/t39.30808-6/415033492_3678480379050474_8613237829220930751_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeETVBM2ybfwQpIIY1QS1xJhLv7xllGhPQEu_vGWUaE9AZWrCX4snBRv7SBb7DGJEQ0AF9Ah4o0AKSMT-Vw6T_Uc&_nc_ohc=yStBPo4Qer4AX_rzR2f&_nc_oc=AQlK-nHl9TZuDL7QOvft5TD2hCMHi28qjfvTV1w0Ld-Im4z2MEGDVZAibgMNAV0b0qQ&_nc_ht=scontent.fmba3-1.fna&oh=00_AfAov7GtYaluOlt1g3jpFaa-Qi_hwrJdUB1Isqq1DQmQaQ&oe=65F05049");
+    background: url("./assets/hero/img1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
