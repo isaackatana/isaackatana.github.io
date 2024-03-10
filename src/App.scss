@@ -169,6 +169,26 @@ header {
     background-size: cover;
     background-position: center;
     height: 94vh;
+    display: flex;
+    align-items: center;
+    
+
+    div {
+        margin-left: 80px;
+        color: rgb(255, 255, 255);
+
+        @include mobile(){
+            margin-left: 20px;
+        }
+
+        h1 {
+            font-size: 50px;
+
+            span {
+                color: rgb(255, 217, 1);
+            }
+        }
+    }
 }
 
 .portfolio {

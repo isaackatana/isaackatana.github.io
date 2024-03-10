@@ -3,10 +3,9 @@ import Logo from '../assets/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
-function Header() {
+function Header(props) {
   return (
     <header>
-
         <div className='logo'>
             <img src={Logo} alt="Logo" />
         </div>
