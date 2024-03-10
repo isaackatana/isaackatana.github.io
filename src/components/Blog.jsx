@@ -1,12 +1,15 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEllipsis } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 function Blog() {
   return (
     <section className='blog'>
         <h1>Blog</h1>
         <div className='container'>
+            <FontAwesomeIcon icon={faChevronRight} className='right'/>
+            <FontAwesomeIcon icon={faChevronLeft} className='Left'/>
             <div className='s-post'>
                 <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Technology_Trends.jpg" alt="" />
                 <div>

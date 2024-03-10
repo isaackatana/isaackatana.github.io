@@ -181,12 +181,37 @@ header .burger .active .line3 {
 }
 .portfolio .container {
   height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.portfolio .container svg {
+  font-size: 100px;
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+.portfolio .container svg:hover {
+  color: rgb(255, 217, 1);
+}
+.portfolio .container .left {
+  left: 0;
+}
+.portfolio .container .right {
+  right: 0;
 }
 .portfolio .container .s-project {
   background-color: rgb(51, 51, 51);
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio .container .s-project iframe {
+  height: 100%;
 }
 
 .blog {
@@ -205,6 +230,26 @@ header .burger .active .line3 {
   display: flex;
   gap: 20px;
   overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.blog .container svg {
+  font-size: 50px;
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+  z-index: 1;
+}
+.blog .container svg:hover {
+  color: rgb(255, 217, 1);
+}
+.blog .container .left {
+  left: 0;
+}
+.blog .container .right {
+  right: 0;
 }
 .blog .container .s-post {
   position: relative;

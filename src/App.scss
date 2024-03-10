@@ -203,14 +203,46 @@ header {
         color: rgb(51, 51, 51);
     }
 
+    
+
     .container {
         height: 400px;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        svg {
+            font-size: 100px;
+            position: absolute;
+            color: white;
+            cursor: pointer;
+            margin: 10px;
+
+            &:hover {
+                color: rgb(255, 217, 1);
+            }
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0;
+        }
 
         .s-project {
             background-color: rgb(51, 51, 51);
             width: 100%;
             height: 100%;
             border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            iframe {
+                height: 100%;
+            }
         }
     }
 }
@@ -231,6 +263,30 @@ header {
         display: flex;
         gap: 20px;
         overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        svg {
+            font-size: 50px;
+            position: absolute;
+            color: white;
+            cursor: pointer;
+            margin: 10px;
+            z-index: 1;
+
+            &:hover {
+                color: rgb(255, 217, 1);
+            }
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0;
+        }
 
         .s-post {
             position: relative;
