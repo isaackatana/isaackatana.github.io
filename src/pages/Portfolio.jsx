@@ -10,7 +10,7 @@ function Portfolio() {
           <FontAwesomeIcon icon={faChevronRight} className='right'/>
           <FontAwesomeIcon icon={faChevronLeft} className='Left'/>
           <div className='s-project'>
-            <iframe src="https://www.behance.net/embed/project/65393817?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VyVVl_d2yZI?si=0IQJRwxTxLRRXVPG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
     </section>
