@@ -19,7 +19,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding: 30px 80px;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -192,7 +192,7 @@ header {
 }
 
 .portfolio {
-    padding: 20px 80px;
+    padding: 30px 80px;
 
     @include mobile(){
         padding: 20px;
@@ -248,7 +248,7 @@ header {
 }
 
 .blog {
-    padding: 20px 80px;
+    padding: 30px 80px;
 
     @include mobile(){
         padding: 20px;
@@ -293,7 +293,7 @@ header {
             border-radius: 10px;
             background-color: rgb(51, 51, 51);
             cursor: pointer;
-            
+            height: 250px;
 
             &:active {
                 cursor: grabbing;
@@ -316,21 +316,23 @@ header {
                     color: rgb(255, 255, 255);
                 }
 
-                div {
-                    display: flex;
-                    justify-content: end;
-                    padding: 0;
-                    
+                p {
+                    color: white;
+                }
+            }
 
-                    svg {
-                        font-size: xx-large;
-                        color: rgb(255, 255, 255);
-                        cursor: pointer;
-                        
-                        &:hover {
-                            color: rgb(255, 217, 1);
-                        }
-                    }
+            .read-more {
+                font-size: 25px;
+                position: absolute;
+                color: white;
+                cursor: pointer;
+                margin: 0px;
+                z-index: 1;
+                bottom: 10px;
+                right: 10px;
+
+                &:hover {
+                    color: rgb(255, 217, 1);
                 }
             }
         }
@@ -384,7 +386,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     background-color: rgb(51, 51, 51);
-    padding: 20px 80px;
+    padding: 30px 80px;
     gap: 20px;
 
     @include mobile(){
