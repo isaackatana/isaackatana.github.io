@@ -14,44 +14,7 @@ $mobile: 425px;
     font-family: sans-serif;
 }
 
-.join-course {
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    border-radius: 10px;
-    position: fixed;
-    bottom: 30px;
-    left: 80px;
-    width: 250px;
-    z-index: 1;
 
-    @include mobile(){
-        left: 20px;
-    }
-
-    p {
-        color: #333333;
-        margin-bottom: 10px;
-    }
-    
-    button {
-        width: 100px;
-        padding: 10px;
-        border: none;
-        border-radius: 10px;
-        background: rgb(255, 217, 1);
-        cursor: pointer;
-    }
-
-    .read-more {
-        position: absolute;
-        bottom: 0;
-        color: rgb(51, 51, 51);
-        right: 10px;
-        bottom: 10px;
-        font-size: 18px;
-        cursor: pointer;
-    }
-}
 
 header {
     background-color: #333333;
@@ -212,14 +175,14 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 94vh;
+    height: 90vh;
     display: flex;
 
     .background-opacity {
         background-color: black;
         position: absolute;
         width: 100%;
-        height: 94vh;
+        height: 90vh;
         opacity: 50%;
     }
 
@@ -234,12 +197,20 @@ body {
 
         @include mobile(){
             flex-direction: column;
-            
+            padding: 10px;
         }
 
         .video {
             width: 600px;
             background-color: rgb(247, 247, 247);
+
+            @include mobile(){
+                width: 100%;
+            }
+            
+            iframe {
+                width: 100%;
+            }
         }
 
         .hero-info {
@@ -260,6 +231,45 @@ body {
             }
             
     
+        }
+
+        .join-course {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 40px;
+            right: 80px;
+            width: 250px;
+            z-index: 1;
+        
+            @include mobile(){
+                left: 20px;
+            }
+        
+            p {
+                color: #333333;
+                margin-bottom: 10px;
+            }
+            
+            button {
+                width: 100px;
+                padding: 10px;
+                border: none;
+                border-radius: 10px;
+                background: rgb(255, 217, 1);
+                cursor: pointer;
+            }
+        
+            .read-more {
+                position: absolute;
+                bottom: 0;
+                color: rgb(51, 51, 51);
+                right: 10px;
+                bottom: 10px;
+                font-size: 18px;
+                cursor: pointer;
+            }
         }
     }
 
@@ -346,6 +356,10 @@ body {
             cursor: pointer;
             margin: 10px;
             z-index: 1;
+
+            @include mobile(){
+                font-size: 37.5px;
+            }
 
             &:hover {
                 color: rgb(255, 217, 1);
