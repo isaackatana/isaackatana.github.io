@@ -8,7 +8,7 @@ import BlogList from './BlogList'
 function Blog() {
 
     const [blogs, setBlogs] = useState([
-        { title:'Where to visit when vising Kenyan Coast', body:'Lorem ipsum ...', id: 1 },
+        { title:'Things to know before learning React Js', body:'Lorem ipsum ...', id: 1 },
         { title:'How to design a logo from scratch with adobe illustrator', body:'Lorem ipsum ...', id: 2 },
         { title:'Using photoshop (camera Raw) to edit photos', body:'Lorem ipsum ...', id: 3 },
         { title:'Things to know before learning Fl Studio', body:'Lorem ipsum ...', id: 4 },

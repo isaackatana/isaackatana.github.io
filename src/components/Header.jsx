@@ -13,7 +13,7 @@ function Header(props) {
         <nav>
             <ul>
                 <li className='active' >Home</li>
-                <li>Blog</li>
+                <li>Courses</li>
                 <li>About</li>
                 <li>Contact</li>
             </ul>

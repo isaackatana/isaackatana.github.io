@@ -4,6 +4,43 @@
   font-family: sans-serif;
 }
 
+.join-course {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 30px;
+  left: 80px;
+  width: 250px;
+  z-index: 1;
+}
+@media (max-width: 425px) {
+  .join-course {
+    left: 20px;
+  }
+}
+.join-course p {
+  color: #333333;
+  margin-bottom: 10px;
+}
+.join-course button {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: rgb(255, 217, 1);
+  cursor: pointer;
+}
+.join-course .read-more {
+  position: absolute;
+  bottom: 0;
+  color: rgb(51, 51, 51);
+  right: 10px;
+  bottom: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
 header {
   background-color: #333333;
   display: flex;
@@ -142,28 +179,55 @@ header .burger .active .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+body {
+  background-color: rgb(247, 247, 247);
+}
+
 .hero {
   background: url("./assets/hero/img1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 94vh;
   display: flex;
-  align-items: center;
 }
-.hero div {
-  margin-left: 80px;
+.hero .background-opacity {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 94vh;
+  opacity: 50%;
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  padding: 0 80px;
+  gap: 20px;
+}
+@media (max-width: 425px) {
+  .hero .container {
+    flex-direction: column;
+  }
+}
+.hero .container .video {
+  width: 600px;
+  background-color: rgb(247, 247, 247);
+}
+.hero .container .hero-info {
   color: rgb(255, 255, 255);
 }
 @media (max-width: 425px) {
-  .hero div {
+  .hero .container .hero-info {
     margin-left: 20px;
   }
 }
-.hero div h1 {
+.hero .container .hero-info h1 {
   font-size: 50px;
-}
-.hero div h1 span {
+  line-height: normal;
   color: rgb(255, 217, 1);
 }
 
@@ -237,7 +301,7 @@ header .burger .active .line3 {
 .blog .container svg {
   font-size: 50px;
   position: absolute;
-  color: white;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   margin: 10px;
   z-index: 1;
@@ -325,8 +389,7 @@ header .burger .active .line3 {
   width: 100px;
   border-radius: 0 10px 10px 0;
   border: none;
-  background: rgb(51, 51, 51);
-  color: rgb(255, 255, 255);
+  background: rgb(255, 217, 1);
   cursor: pointer;
 }
 
