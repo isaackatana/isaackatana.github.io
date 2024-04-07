@@ -1,4 +1,6 @@
-$mobile: 425px;
+@import './resets';
+@import './variables';
+
 
 @mixin mobile {
     @media (max-width: $mobile) {
@@ -13,6 +15,92 @@ $mobile: 425px;
     padding: 0;
     font-family: sans-serif;
 }
+
+body {
+    position: relative;
+}
+
+// ................................
+
+.login-popup {
+    background-color: rgb(51, 51, 51);
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: 20px;
+
+    h2 {
+        margin-bottom: 8px;
+        color: rgb(247, 247, 247);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 240px;
+
+        input {
+            padding: 12px;
+            border-radius: 6px;
+            border: none;
+        }
+
+        .action {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            div {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                
+                p {
+                    font-size: x-small;
+                    color: rgb(247, 247, 247);
+                }
+            }
+            button {
+                width: 100px;
+            }
+        }
+
+    }
+
+    .action {
+        display: flex;
+        margin-top: 8px;
+
+        input {
+            cursor: pointer;
+        }
+    }
+
+    .close-popup {
+        color: rgb(247, 247, 247);
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: x-large;
+        cursor: pointer;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .register {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+// ................................
 
 header {
     background-color: #333333;
@@ -46,98 +134,53 @@ header {
 
     nav {
         display: flex;
+        align-items: center;
         justify-content: center;
+        gap: 20px;
 
         @include mobile(){
             position: fixed;
-            right: 100%;
-            top: 69px;
+            top: 89px;
+            right: 0;
             background-color: rgb(51, 51, 51);
             height: 100vh;
-            width: 100%;
+            width: 50%;
             gap: 0;
             justify-content: right;
         }
 
-        ul {
+        .social-media {
             display: flex;
-            gap: 20px;
-
-            @include mobile(){
-                display: flex;
-                flex-direction: column;
-                align-items: right;
-                justify-content: right;
-                margin: 20px 80px;
-            }
-
-            li {
-                list-style: none;
-                font-weight: bold;
-                cursor: pointer;
-                color: rgb(255, 255, 255);
-                
+            justify-content: end;
+            gap: 8px;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+    
+            svg {
+                font-size: 25px;
+                transition: 0.3s;
+    
                 &:hover {
                     color: rgb(255, 217, 1);
-                    color: rgb(255, 217, 1);
-                }
-
-                &::after {
-                    content: '';
-                    width: 0%;
-                    height: 3px;
-                    background-color: rgb(255, 217, 1);
-                    display: block;
-                    border-radius: 3px;
-                    transition: 0.3s;
-                    margin-top: 2px;
-                }
-
-                &:hover::after {
-                    content: '';
-                    width: 50%;
-                    height: 3px;
-                    background-color: rgb(255, 217, 1);
-                    display: block;
-                    border-radius: 3px;
-                }
-            }
-
-            .active {
-                color: rgb(255, 217, 1);
-
-                &::after {
-                    content: '';
-                    width: 50%;
-                    height: 3px;
-                    background-color: rgb(255, 217, 1);
-                    display: block;
-                    border-radius: 3px;
                 }
             }
         }
-    }
 
-    .social-media {
-        display: flex;
-        justify-content: end;
-        gap: 8px;
-        cursor: pointer;
-        color: rgb(255, 255, 255);
-
-        svg {
-            font-size: 25px;
-            transition: 0.3s;
-
-            &:hover {
-                color: rgb(255, 217, 1);
+        .user-acc {
+            display: flex;
+            gap: 10px;
+    
+            button {
+                width: 100px;
             }
         }
-    }
 
+    }
+    
     .burger {
         display: none;
         cursor: pointer;
+        margin: 10px;
 
         @include mobile(){
             display: block;
@@ -336,6 +379,18 @@ body {
                 p {
                     color: white;
                 }
+            }
+
+            .remove {
+                background-color: yellow;
+                width: 100px;
+                padding: 5px;
+                border: none;
+                border-radius: 0 10px 10px 0;
+                position: absolute;
+                bottom: 10px;
+                left: 0;
+                cursor: pointer;
             }
 
             .read-more {

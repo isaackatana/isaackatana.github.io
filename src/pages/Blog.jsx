@@ -5,7 +5,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import { useState } from 'react'
 import BlogList from './BlogList'
 
-function Blog() {
+function Blog(props) {
 
     const [blogs, setBlogs] = useState([
         { title:'Things to know before learning React Js', body:'Lorem ipsum ...', id: 1 },
@@ -15,9 +15,11 @@ function Blog() {
         { title:'Things to know before learning Fl Studio', body:'Lorem ipsum ...', id: 4 },
     ]);
 
+    const title = props.title;
+
   return (
     <section className='blog'>
-        <h1>Blog</h1>
+        <h1>Blogs</h1>
         <div className='container'>
             <FontAwesomeIcon icon={faChevronRight} className='right'/>
             <FontAwesomeIcon icon={faChevronLeft} className='Left'/>

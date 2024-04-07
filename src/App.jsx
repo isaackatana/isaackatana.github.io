@@ -6,11 +6,14 @@ import Blog from './pages/Blog'
 import Header from './components/Header'
 
 import Home from './pages/Home'
+import LoginPopup from './pages/LoginPopup'
 
 function App() {
 
   return (
     <>
+    <LoginPopup/>
+    
     <Header />
 
     <Home name = "Isaac"/>
