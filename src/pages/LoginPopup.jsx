@@ -17,6 +17,7 @@ function LoginPopup() {
                     <button>Login</button>
                 </div>
             </form>
+            <div className='switch-form'><p>Don't have an account</p><a href="">Login</a></div>
         </div>
         <div className='register'>
             <FontAwesomeIcon icon={faXmark} className='close-popup'/>
@@ -32,6 +33,7 @@ function LoginPopup() {
                     <button>Register</button>
                 </div>
             </form>
+            <div className='switch-form'><p>Already have an account</p><a href="">Login</a></div>
         </div>
         
     </div>

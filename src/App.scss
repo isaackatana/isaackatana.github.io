@@ -73,10 +73,28 @@ body {
 
     .action {
         display: flex;
-        margin-top: 8px;
+        margin-bottom: 8px;
 
         input {
             cursor: pointer;
+        }
+    }
+
+    .switch-form {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        font-size: small;
+        padding: 8px 0 8px;
+        border-top: solid rgb(255, 255, 255) 2px;
+
+        p {
+            color: rgb(255, 255, 255);
+        }
+
+        a {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
         }
     }
 
@@ -90,14 +108,15 @@ body {
     }
 
     .login {
-        display: none;
+        display: flex;
         flex-direction: column;
     }
 
     .register {
-        display: flex;
+        display: none;
         flex-direction: column;
     }
+    
 }
 
 // ................................

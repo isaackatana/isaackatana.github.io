@@ -60,10 +60,25 @@ body {
 }
 .login-popup .action {
   display: flex;
-  margin-top: 8px;
+  margin-bottom: 8px;
 }
 .login-popup .action input {
   cursor: pointer;
+}
+.login-popup .switch-form {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  font-size: small;
+  padding: 8px 0 8px;
+  border-top: solid rgb(255, 255, 255) 2px;
+}
+.login-popup .switch-form p {
+  color: rgb(255, 255, 255);
+}
+.login-popup .switch-form a {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 .login-popup .close-popup {
   color: rgb(247, 247, 247);
@@ -74,11 +89,11 @@ body {
   cursor: pointer;
 }
 .login-popup .login {
-  display: none;
+  display: flex;
   flex-direction: column;
 }
 .login-popup .register {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 

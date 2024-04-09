@@ -3,7 +3,7 @@ import Logo from '../assets/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
-function Header(props) {
+function Header() {
     
   return (
     <header>
@@ -12,7 +12,6 @@ function Header(props) {
         </div>
 
         <ul>
-            <li>Home</li>
         </ul>
 
         <nav>
@@ -25,7 +24,6 @@ function Header(props) {
 
             <div className='user-acc'>
                 <button id='login'>Login</button>
-                <button id='register'>Register</button>
             </div>
         </nav>
 
