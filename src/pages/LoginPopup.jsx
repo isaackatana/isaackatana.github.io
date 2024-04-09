@@ -22,8 +22,8 @@ function LoginPopup() {
             <FontAwesomeIcon icon={faXmark} className='close-popup'/>
             <h2>Register</h2>
             <form action="" id='register'>
-                <input type="text" placeholder='First name' required/>
-                <input type="text" placeholder='Last name' required/>
+                <input type="text" placeholder='First Name' required/>
+                <input type="text" placeholder='Last Name' required/>
                 <input type="email" placeholder='Email' required/>
                 <input type="password" placeholder='Password'required/>
                 <input type="password" placeholder='Confirm Password' required/>
