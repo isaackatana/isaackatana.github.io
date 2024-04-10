@@ -17,7 +17,7 @@ function LoginPopup() {
                     <button>Login</button>
                 </div>
             </form>
-            <div className='switch-form'><p>Don't have an account</p><a href="">Login</a></div>
+            <div className='switch-form'><p>Don't have an account</p><a href="">Register</a></div>
         </div>
         <div className='register'>
             <FontAwesomeIcon icon={faXmark} className='close-popup'/>
