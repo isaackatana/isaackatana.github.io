@@ -128,57 +128,65 @@ header .logo img {
     width: 60px;
   }
 }
-header nav {
+header .menu {
+  display: flex;
+}
+header .menu nav {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
-header nav .social-media {
+header .menu nav .social-media {
   display: flex;
   justify-content: end;
   gap: 8px;
   cursor: pointer;
   color: rgb(255, 255, 255);
 }
-header nav .social-media svg {
+@media (max-width: 425px) {
+  header .menu nav .social-media {
+    display: none;
+  }
+}
+header .menu nav .social-media svg {
   font-size: 25px;
   transition: 0.3s;
 }
-header nav .social-media svg:hover {
+header .menu nav .social-media svg:hover {
   color: rgb(255, 217, 1);
 }
-header nav .user-acc {
+header .menu nav .user-acc {
   display: flex;
   gap: 10px;
 }
-header nav .user-acc button {
+header .menu nav .user-acc button {
   width: 100px;
 }
-header .burger {
+header .menu .burger {
   display: none;
   cursor: pointer;
   margin: 10px;
 }
 @media (max-width: 425px) {
-  header .burger {
+  header .menu .burger {
     display: block;
   }
 }
-header .burger div {
+header .menu .burger div {
   background-color: rgb(255, 255, 255);
   width: 25px;
   height: 3px;
   margin: 5px;
   border-radius: 3px;
 }
-header .burger .active .line1 {
+header .menu .burger .active .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
-header .burger .active .line2 {
+header .menu .burger .active .line2 {
   opacity: 0;
 }
-header .burger .active .line3 {
+header .menu .burger .active .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 

@@ -146,69 +146,76 @@ header {
         }
     }
 
-    nav {
+    .menu {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-
-        @include mobile(){
-            
-        }
-
-        .social-media {
+        nav {
             display: flex;
-            justify-content: end;
-            gap: 8px;
-            cursor: pointer;
-            color: rgb(255, 255, 255);
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
     
-            svg {
-                font-size: 25px;
-                transition: 0.3s;
+            @include mobile(){
+                
+            }
     
-                &:hover {
-                    color: rgb(255, 217, 1);
+            .social-media {
+                display: flex;
+                justify-content: end;
+                gap: 8px;
+                cursor: pointer;
+                color: rgb(255, 255, 255);
+    
+                @include mobile(){
+                    display: none;
+                }
+        
+                svg {
+                    font-size: 25px;
+                    transition: 0.3s;
+        
+                    &:hover {
+                        color: rgb(255, 217, 1);
+                    }
                 }
             }
-        }
-
-        .user-acc {
-            display: flex;
-            gap: 10px;
     
-            button {
-                width: 100px;
+            .user-acc {
+                display: flex;
+                gap: 10px;
+        
+                button {
+                    width: 100px;
+                }
             }
-        }
-
-    }
     
-    .burger {
-        display: none;
-        cursor: pointer;
-        margin: 10px;
-
-        @include mobile(){
-            display: block;
         }
-
-        div {
-            background-color: rgb(255, 255, 255);
-            width: 25px;
-            height: 3px;
-            margin: 5px;
-            border-radius: 3px;
-        }
-
-        .active .line1 {
-            transform: rotate(-45deg) translate(-5px, 6px);
-        }
-        .active .line2 {
-            opacity: 0;
-        }
-        .active .line3 {
-            transform: rotate(45deg) translate(-5px, -6px);
+        
+        .burger {
+            display: none;
+            cursor: pointer;
+            margin: 10px;
+    
+            @include mobile(){
+                display: block;
+            }
+    
+            div {
+                background-color: rgb(255, 255, 255);
+                width: 25px;
+                height: 3px;
+                margin: 5px;
+                border-radius: 3px;
+            }
+    
+            .active .line1 {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+            .active .line2 {
+                opacity: 0;
+            }
+            .active .line3 {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
         }
     }
 }
