@@ -1,8 +1,18 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react';
 
 function LoginPopup() {
+
+    function Popup() {
+        const [isOpen, setIsOpen] = useState(false);
+      
+        const togglePopup = () => {
+          setIsOpen(!isOpen);
+        };
+    }
+
   return (
     <div className='login-popup'>
         

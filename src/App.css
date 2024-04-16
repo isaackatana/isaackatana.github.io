@@ -9,7 +9,7 @@ button {
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Alaska, sans-serif;
 }
 
 body {
@@ -215,6 +215,7 @@ body {
   color: rgb(255, 255, 255);
   position: absolute;
   margin-left: 80px;
+  max-width: 400px;
 }
 @media (max-width: 425px) {
   .hero .hero-info {
