@@ -11,7 +11,7 @@ function BlogList(props) {
     <>
         {blogs.map((blog)=>(
             <div className='s-post' key={blog.id}>
-                <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Technology_Trends.jpg" alt="" />
+                <img src="https://www.skillshare.com/blog/_next/image/?url=https%3A%2F%2Fwww.skillshare.com%2Fblog%2Fwp-content%2Fuploads%2F2023%2F04%2Fskillshare-photshop-plant-drawing.jpeg&w=3840&q=75" alt="" />
                 <div>
                     <h4>{blog.title}</h4>
                 </div>
