@@ -105,12 +105,12 @@ body {
     }
 
     .login {
-        display: flex;
+        display: none;
         flex-direction: column;
     }
 
     .register {
-        display: none;
+        display: flex;
         flex-direction: column;
     }
     
@@ -339,9 +339,14 @@ body {
         align-items: center;
 
         svg {
-            font-size: 50px;
+            font-size: 20px;
             position: absolute;
-            color: rgb(255, 255, 255);
+            background-color: rgb(255, 217, 1);
+            color: rgb(51, 51, 51);
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            border-radius: 50px;
             cursor: pointer;
             margin: 10px;
             z-index: 1;
@@ -411,15 +416,17 @@ body {
             .read-more {
                 font-size: 25px;
                 position: absolute;
-                color: white;
+                color: rgb(51, 51, 51);
                 cursor: pointer;
                 margin: 0px;
                 z-index: 1;
                 bottom: 10px;
                 right: 10px;
+                padding: 3px;
 
                 &:hover {
                     color: rgb(255, 217, 1);
+                    background-color: rgb(51, 51, 51);
                 }
             }
         }
@@ -449,15 +456,15 @@ body {
             gap: 5px;
 
             input {
-                padding: 8px;
+                padding: 8px 12px;
                 width: 200px;
-                border-radius: 10px 0 0 10px;
+                border-radius: 20px 0 0 20px;
                 border: none;
             }
 
             button {
                 width: 100px;
-                border-radius: 0 10px 10px 0;
+                border-radius: 0 20px 20px 0;
                 border: none;
                 background: rgb(255, 217, 1);
                 cursor: pointer;
