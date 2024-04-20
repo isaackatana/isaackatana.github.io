@@ -22,7 +22,7 @@ function Blog(props) {
         <h1>Blogs</h1>
         <div className='container'>
             <FontAwesomeIcon icon={faChevronRight} className='right'/>
-            <FontAwesomeIcon icon={faChevronLeft} className='Left'/>
+            <FontAwesomeIcon icon={faChevronLeft} className='left'/>
 
             <BlogList blogs={blogs}/>
         </div>

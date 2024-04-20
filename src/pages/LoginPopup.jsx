@@ -1,17 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
-import { useState } from 'react';
 
 function LoginPopup() {
-
-    function Popup() {
-        const [isOpen, setIsOpen] = useState(false);
-      
-        const togglePopup = () => {
-          setIsOpen(!isOpen);
-        };
-    }
 
   return (
     <div className='login-popup'>
@@ -29,6 +20,7 @@ function LoginPopup() {
             </form>
             <div className='switch-form'><p>Don't have an account</p><a href="">Register</a></div>
         </div>
+        
         <div className='register'>
             <FontAwesomeIcon icon={faXmark} className='close-popup'/>
             <h2>Register</h2>
@@ -39,7 +31,7 @@ function LoginPopup() {
                 <input type="password" placeholder='Password'required/>
                 <input type="password" placeholder='Confirm Password' required/>
                 <div className='action'>
-                    <div><input type="checkbox"/><p>Subscribe to newletters</p></div>
+                    <div className='checkbox'><input type="checkbox"/><p>Subscribe</p></div>
                     <button>Register</button>
                 </div>
             </form>
