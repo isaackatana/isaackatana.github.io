@@ -2,9 +2,6 @@ import React from 'react'
 import Logo from '../assets/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import LoginPopup from '../pages/LoginPopup'
-// import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -21,7 +18,6 @@ function Header() {
         </ul>
 
         <div className='menu'>
-            <LoginPopup/>
             <nav>
                 <div className='social-media'>
                     <FontAwesomeIcon icon={faFacebook}/>

@@ -4,6 +4,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 
 function LoginPopup(props) {
+    
     const [showLoginForm, setShowLoginForm] = useState(true);
     const [showRegistrationForm, setShowRegistrationForm] = useState(false);
 
@@ -22,18 +23,19 @@ function LoginPopup(props) {
     };
 
     // ===================================
+
     const [isOpen, setIsOpen] = useState(false);
 
     const openPopup = () => {
-    setIsOpen(true);
+        setIsOpen(true);
     };
 
     const closePopup = () => {
-    setIsOpen(false);
+        setIsOpen(false);
     };
     
   return (
-    <LoginPopup>
+    <div>
         {isOpen && (
             <div className='login-popup'>
             
@@ -74,7 +76,7 @@ function LoginPopup(props) {
                 
             </div>
         )}
-    </LoginPopup>
+    </div>
   )
 }
 
