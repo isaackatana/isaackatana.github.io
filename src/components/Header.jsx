@@ -2,6 +2,9 @@ import React from 'react'
 import Logo from '../assets/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import LoginPopup from '../pages/LoginPopup'
+// import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -11,9 +14,14 @@ function Header() {
         </div>
 
         <ul>
+            {/* <Link to="../pages/Home.jsx">Home</Link>
+            <Link to="../pages/Shop.jsx">Shop</Link>
+            <Link to="../pages/About.jsx">About</Link>
+            <Link to="../pages/Contact.jsx">Contact</Link> */}
         </ul>
 
         <div className='menu'>
+            <LoginPopup/>
             <nav>
                 <div className='social-media'>
                     <FontAwesomeIcon icon={faFacebook}/>
@@ -23,7 +31,7 @@ function Header() {
                 </div>
 
                 <div className='user-acc'>
-                    <button id='login'>Login</button>
+                    <button id='login' >Login</button>
                 </div>
             </nav>
 

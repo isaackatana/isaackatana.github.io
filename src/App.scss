@@ -71,6 +71,7 @@ body {
                 @include mobile(){
                     padding: 6px;
                     width: 75px;
+                    font-size: x-small;
                 }
             }
         }
@@ -94,7 +95,7 @@ body {
         padding: 8px 0 8px;
         border: solid rgb(255, 255, 255) 1px;
         border-radius: 6px;
-
+        
         p {
             color: rgb(255, 255, 255);
         }
@@ -102,10 +103,12 @@ body {
         a {
             color: rgb(255, 255, 255);
             font-weight: bold;
+            cursor: pointer;
+            text-decoration: underline;
         }
     }
 
-    .close-popup {
+    .close-btn {
         color: rgb(247, 247, 247);
         position: absolute;
         right: 10px;
@@ -115,7 +118,7 @@ body {
     }
 
     .login {
-        display: none;
+        display: flex;
         flex-direction: column;
     }
 
@@ -198,6 +201,7 @@ header {
                     @include mobile(){
                         width: 75px;
                         padding: 6px;
+                        font-size: x-small;
                     }
                 }
             }
@@ -260,7 +264,7 @@ body {
         color: rgb(255, 255, 255);
         position: absolute;
         margin-left: 80px;
-        max-width: 400px;
+        max-width: 500px;
 
         @include mobile(){
             margin-left: 20px;

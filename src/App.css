@@ -64,6 +64,7 @@ body {
   .login-popup form .action button {
     padding: 6px;
     width: 75px;
+    font-size: x-small;
   }
 }
 .login-popup .action {
@@ -88,8 +89,10 @@ body {
 .login-popup .switch-form a {
   color: rgb(255, 255, 255);
   font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
 }
-.login-popup .close-popup {
+.login-popup .close-btn {
   color: rgb(247, 247, 247);
   position: absolute;
   right: 10px;
@@ -98,7 +101,7 @@ body {
   cursor: pointer;
 }
 .login-popup .login {
-  display: none;
+  display: flex;
   flex-direction: column;
 }
 .login-popup .register {
@@ -172,6 +175,7 @@ header .menu nav .user-acc {
   header .menu nav .user-acc button {
     width: 75px;
     padding: 6px;
+    font-size: x-small;
   }
 }
 header .menu .burger {
@@ -226,7 +230,7 @@ body {
   color: rgb(255, 255, 255);
   position: absolute;
   margin-left: 80px;
-  max-width: 400px;
+  max-width: 500px;
 }
 @media (max-width: 425px) {
   .hero .hero-info {
