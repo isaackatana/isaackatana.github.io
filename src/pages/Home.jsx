@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Home({name}) {
+function Home() {
   
   return (
     <div className='hero'>
@@ -10,8 +10,6 @@ function Home({name}) {
       </div>
       
       <div className='hero-info'>
-        <h1>Hello I'm <span>{name}</span></h1>
-        <p>I teach how to make the web and how to make it look good.</p>
       </div>-
 
     </div>

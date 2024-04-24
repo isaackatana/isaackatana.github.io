@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
 function Header() {
+
   return (
     <header>
         <div className='logo'>
@@ -18,6 +19,7 @@ function Header() {
         </ul>
 
         <div className='menu'>
+
             <nav>
                 <div className='social-media'>
                     <FontAwesomeIcon icon={faFacebook}/>
@@ -27,7 +29,7 @@ function Header() {
                 </div>
 
                 <div className='user-acc'>
-                    <button id='login' >Login</button>
+                    <button id='login'>Login</button>
                 </div>
             </nav>
 
@@ -36,6 +38,7 @@ function Header() {
                 <div className='line2'></div>
                 <div className='line3'></div>
             </div>
+            
         </div>
     </header>
   )
