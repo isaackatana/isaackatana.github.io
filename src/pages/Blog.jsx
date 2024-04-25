@@ -12,7 +12,7 @@ function Blog(props) {
         { title:'How to design a logo from scratch with adobe illustrator', body:'Lorem ipsum ...', id: 2 },
         { title:'Using photoshop (camera Raw) to edit photos', body:'Lorem ipsum ...', id: 3 },
         { title:'Things to know before learning Fl Studio', body:'Lorem ipsum ...', id: 4 },
-        { title:'Things to know before learning Fl Studio', body:'Lorem ipsum ...', id: 4 },
+        { title:'Things to know before learning Fl Studio', body:'Lorem ipsum ...', id: 5 },
     ]);
 
     const title = props.title;
