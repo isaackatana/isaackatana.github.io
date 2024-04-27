@@ -60,13 +60,6 @@ body {
   font-size: x-small;
   color: rgb(247, 247, 247);
 }
-@media (max-width: 425px) {
-  .login-popup form .action button {
-    padding: 6px;
-    width: 75px;
-    font-size: x-small;
-  }
-}
 .login-popup .action {
   display: flex;
   margin-bottom: 8px;
@@ -121,7 +114,7 @@ header {
 }
 @media (max-width: 425px) {
   header {
-    padding: 20px;
+    padding: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
@@ -141,6 +134,11 @@ header .logo img {
 }
 header .menu {
   display: flex;
+}
+@media (max-width: 425px) {
+  header .menu {
+    gap: 10px;
+  }
 }
 header .menu nav {
   display: flex;
@@ -171,17 +169,9 @@ header .menu nav .user-acc {
   display: flex;
   gap: 10px;
 }
-@media (max-width: 425px) {
-  header .menu nav .user-acc button {
-    width: 75px;
-    padding: 6px;
-    font-size: x-small;
-  }
-}
 header .menu .burger {
   display: none;
   cursor: pointer;
-  margin: 10px;
 }
 @media (max-width: 425px) {
   header .menu .burger {
@@ -297,7 +287,7 @@ body {
 }
 @media (max-width: 425px) {
   .blog {
-    padding: 20px;
+    padding: 10px;
   }
 }
 .blog h1 {
