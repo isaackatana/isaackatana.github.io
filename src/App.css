@@ -208,9 +208,24 @@ body {
   height: 90vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .hero .video-slide {
   display: flex;
+}
+.hero .video-slide .single-video {
+  width: 820px;
+  display: flex;
+}
+.hero .video-slide .single-video iframe {
+  width: 100%;
+  height: 461px;
+  border-radius: 20px;
+}
+@media (max-width: 425px) {
+  .hero .video-slide .single-video iframe {
+    border-radius: none;
+  }
 }
 .hero .background-opacity {
   background-color: black;
