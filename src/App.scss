@@ -244,33 +244,20 @@ body {
     display: flex;
     align-items: center;
 
+    .video-slide {
+        display: flex;
+
+        .single-video {
+
+        }
+    }
+
     .background-opacity {
         background-color: black;
         position: absolute;
         width: 100%;
         height: 90vh;
         opacity: 50%;
-    }
-
-    .hero-info {
-        color: rgb(255, 255, 255);
-        position: absolute;
-        margin-left: 80px;
-        max-width: 500px;
-
-        @include mobile(){
-            margin-left: 20px;
-        }
-
-        h1 {
-            font-size: 50px;
-            line-height: normal;
-
-            span {
-                color: rgb(255, 217, 1);
-            }
-        }
-
     }
 }
 

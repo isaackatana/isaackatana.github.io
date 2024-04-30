@@ -209,30 +209,15 @@ body {
   display: flex;
   align-items: center;
 }
+.hero .video-slide {
+  display: flex;
+}
 .hero .background-opacity {
   background-color: black;
   position: absolute;
   width: 100%;
   height: 90vh;
   opacity: 50%;
-}
-.hero .hero-info {
-  color: rgb(255, 255, 255);
-  position: absolute;
-  margin-left: 80px;
-  max-width: 500px;
-}
-@media (max-width: 425px) {
-  .hero .hero-info {
-    margin-left: 20px;
-  }
-}
-.hero .hero-info h1 {
-  font-size: 50px;
-  line-height: normal;
-}
-.hero .hero-info h1 span {
-  color: rgb(255, 217, 1);
 }
 
 .portfolio {
