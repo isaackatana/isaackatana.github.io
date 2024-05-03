@@ -10,7 +10,6 @@ function Home() {
         <div className="single-video">
         </div>
         
-        
       </div>
 
     </div>

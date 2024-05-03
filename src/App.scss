@@ -18,111 +18,6 @@ body {
     position: relative;
 }
 
-.login-popup {
-    background-color: rgb(51, 51, 51);
-    border-radius: 10px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    padding: 20px;
-
-    h2 {
-        margin-bottom: 8px;
-        color: rgb(247, 247, 247);
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        width: 240px;
-
-        input {
-            padding: 12px;
-            border-radius: 6px;
-            border: none;
-        }
-
-        .action {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            
-            .checkbox {
-                display: flex;
-                align-items: center;
-            }
-
-            div {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                
-                p {
-                    font-size: x-small;
-                    color: rgb(247, 247, 247);
-                }
-            }
-
-            // button {
-            // }
-        }
-
-    }
-
-    .action {
-        display: flex;
-        margin-bottom: 8px;
-
-        input {
-            cursor: pointer;
-        }
-    }
-
-    .switch-form {
-        display: flex;
-        gap: 8px;
-        justify-content: center;
-        font-size: small;
-        padding: 8px 0 8px;
-        border: solid rgb(255, 255, 255) 1px;
-        border-radius: 6px;
-        
-        p {
-            color: rgb(255, 255, 255);
-        }
-
-        a {
-            color: rgb(255, 255, 255);
-            font-weight: bold;
-            cursor: pointer;
-            text-decoration: underline;
-        }
-    }
-
-    .close-btn {
-        color: rgb(247, 247, 247);
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        font-size: x-large;
-        cursor: pointer;
-    }
-
-    .login {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .register {
-        display: flex;
-        flex-direction: column;
-    }
-    
-}
-
 header {
     background-color: #333333;
     display: flex;
@@ -134,7 +29,7 @@ header {
     z-index: 1;
 
     @include mobile(){
-        padding: 10px;
+        padding: 20px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
@@ -155,7 +50,7 @@ header {
 
     .menu {
         display: flex;
-        
+
         @include mobile(){
             align-items: center;
             gap: 10px;
@@ -326,7 +221,7 @@ body {
     padding: 30px 80px;
 
     @include mobile(){
-        padding: 10px;
+        padding: 20px;
     }
 
     h1 {

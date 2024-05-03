@@ -17,91 +17,6 @@ body {
   position: relative;
 }
 
-.login-popup {
-  background-color: rgb(51, 51, 51);
-  border-radius: 10px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  padding: 20px;
-}
-.login-popup h2 {
-  margin-bottom: 8px;
-  color: rgb(247, 247, 247);
-}
-.login-popup form {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  width: 240px;
-}
-.login-popup form input {
-  padding: 12px;
-  border-radius: 6px;
-  border: none;
-}
-.login-popup form .action {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.login-popup form .action .checkbox {
-  display: flex;
-  align-items: center;
-}
-.login-popup form .action div {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.login-popup form .action div p {
-  font-size: x-small;
-  color: rgb(247, 247, 247);
-}
-.login-popup .action {
-  display: flex;
-  margin-bottom: 8px;
-}
-.login-popup .action input {
-  cursor: pointer;
-}
-.login-popup .switch-form {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  font-size: small;
-  padding: 8px 0 8px;
-  border: solid rgb(255, 255, 255) 1px;
-  border-radius: 6px;
-}
-.login-popup .switch-form p {
-  color: rgb(255, 255, 255);
-}
-.login-popup .switch-form a {
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: underline;
-}
-.login-popup .close-btn {
-  color: rgb(247, 247, 247);
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: x-large;
-  cursor: pointer;
-}
-.login-popup .login {
-  display: flex;
-  flex-direction: column;
-}
-.login-popup .register {
-  display: flex;
-  flex-direction: column;
-}
-
 header {
   background-color: #333333;
   display: flex;
@@ -114,7 +29,7 @@ header {
 }
 @media (max-width: 425px) {
   header {
-    padding: 10px;
+    padding: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
@@ -278,7 +193,7 @@ body {
 }
 @media (max-width: 425px) {
   .blog {
-    padding: 10px;
+    padding: 20px;
   }
 }
 .blog h1 {

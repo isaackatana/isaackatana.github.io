@@ -27,10 +27,6 @@ function Header() {
                     <FontAwesomeIcon icon={faXTwitter}/>
                     <FontAwesomeIcon icon={faGithub}/>
                 </div>
-
-                <div className='user-acc'>
-                    <button id='login'>Login</button>
-                </div>
             </nav>
 
             <div className='burger'>
