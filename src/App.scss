@@ -155,8 +155,9 @@ header {
 
     .menu {
         display: flex;
-
+        
         @include mobile(){
+            align-items: center;
             gap: 10px;
         }
 
