@@ -25,7 +25,7 @@ header {
   padding: 30px 80px;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 @media (max-width: 425px) {
   header {
@@ -46,6 +46,26 @@ header .logo img {
   header .logo img {
     width: 60px;
   }
+}
+header ul {
+  display: flex;
+  gap: 15px;
+}
+@media (max-width: 425px) {
+  header ul {
+    flex-direction: column;
+    position: absolute;
+    top: 69px;
+    right: 0;
+    background-color: rgb(51, 51, 51);
+    width: 100vw;
+    height: 50vh;
+    transform: translateX(100%);
+  }
+}
+header ul a {
+  color: white;
+  padding: 15px;
 }
 header .menu {
   display: flex;
@@ -71,7 +91,7 @@ header .menu nav .social-media {
 }
 @media (max-width: 425px) {
   header .menu nav .social-media {
-    display: none;
+    display: flex;
   }
 }
 header .menu nav .social-media svg {
@@ -125,20 +145,34 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
-.hero .video-slide {
-  display: flex;
-}
-.hero .video-slide .single-video {
-  width: 820px;
-  display: flex;
-}
-.hero .background-opacity {
+.hero .overlay {
   background-color: black;
   position: absolute;
-  width: 100%;
-  height: 90vh;
+  inset: 0;
   opacity: 50%;
+}
+.hero .wrapper {
+  color: white;
+  z-index: 5;
+}
+.hero .wrapper div {
+  color: white;
+  z-index: 5;
+  margin-bottom: 5px;
+}
+.hero .wrapper a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 125px;
+  background-color: rgb(255, 217, 1);
+  padding: 8px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
 }
 
 .portfolio {
@@ -308,17 +342,16 @@ body {
 }
 .newsletter .subscribe p {
   margin-bottom: 10px;
-  color: rgb(255, 255, 255);
 }
 .newsletter .subscribe div {
   display: flex;
   gap: 5px;
 }
 .newsletter .subscribe div input {
-  padding: 8px 12px;
+  padding: 8px;
   width: 200px;
   border-radius: 20px 0 0 20px;
-  border: none;
+  border: solid black 1px;
 }
 .newsletter .subscribe div button {
   width: 100px;
@@ -326,6 +359,7 @@ body {
   border: none;
   background: rgb(255, 217, 1);
   cursor: pointer;
+  border: solid black 1px;
 }
 
 footer {
@@ -344,7 +378,7 @@ footer {
 }
 footer p {
   color: rgb(255, 255, 255);
-  font-size: 14px;
+  font-size: small;
 }
 footer .social-media {
   display: flex;

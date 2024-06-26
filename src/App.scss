@@ -26,7 +26,7 @@ header {
     padding: 30px 80px;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10;
 
     @include mobile(){
         padding: 20px;
@@ -45,6 +45,26 @@ header {
             @include mobile(){
                 width: 60px;
             }
+        }
+    }
+
+    ul {
+        display: flex;
+        gap: 15px;
+
+        @include mobile(){
+            flex-direction: column;
+            position: absolute;
+            top: 69px;
+            right: 0;
+            background-color: rgb(51, 51, 51);
+            width: 100vw;
+            height: 50vh;
+            transform: translateX(100%);
+        }
+        a {
+            color: white;
+            padding: 15px;
         }
     }
 
@@ -74,7 +94,7 @@ header {
                 color: rgb(255, 255, 255);
     
                 @include mobile(){
-                    display: none;
+                    display: flex;
                 }
         
                 svg {
@@ -140,26 +160,37 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 
-    .video-slide {
-        display: flex;
-
-        .single-video {
-            width: 820px;
-            display: flex;
-
-            @include mobile(){
-            }
-
-        }
-    }
-
-    .background-opacity {
+    .overlay {
         background-color: black;
         position: absolute;
-        width: 100%;
-        height: 90vh;
+        inset: 0;
         opacity: 50%;
+    }
+
+    .wrapper {
+        color: white;
+        z-index: 5;
+
+        div {
+            color: white;
+            z-index: 5;
+            margin-bottom: 5px;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            width: 125px;
+            background-color: rgb(255, 217, 1);
+            padding: 8px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: black;
+        }
     }
 }
 
@@ -349,7 +380,6 @@ body {
 
         p {
             margin-bottom: 10px;
-            color: rgb(255, 255, 255);
         }
 
         div {
@@ -357,10 +387,10 @@ body {
             gap: 5px;
 
             input {
-                padding: 8px 12px;
+                padding: 8px;
                 width: 200px;
                 border-radius: 20px 0 0 20px;
-                border: none;
+                border: solid black 1px;
             }
 
             button {
@@ -369,6 +399,7 @@ body {
                 border: none;
                 background: rgb(255, 217, 1);
                 cursor: pointer;
+                border: solid black 1px;
             }
         }
     }
@@ -389,7 +420,7 @@ footer {
 
     p {
         color: rgb(255, 255, 255);
-        font-size: 14px;
+        font-size: small;
     }
 
     .social-media {

@@ -6,10 +6,10 @@ function Footer() {
   return (
     <footer>
     <div>
-        <p>2024 © Isaac Katana | All rights reserved.</p>
+        <p>©2024 Isaac Katana | All rights reserved.</p>
     </div>
     <div className='social-media'>
-        <FontAwesomeIcon icon={faFacebook}/>
+        <FontAwesomeIcon icon={faFacebook} target='blank_'/>
         <FontAwesomeIcon icon={faInstagram}/>
         <FontAwesomeIcon icon={faXTwitter}/>
         <FontAwesomeIcon icon={faGithub}/>

@@ -3,19 +3,22 @@ import Logo from '../assets/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
+import { Link } from 'react-router-dom'
+
 function Header() {
 
   return (
     <header>
         <div className='logo'>
-            <img src={Logo} alt="Logo" />
+            <Link to="/"><img src={Logo} alt="Logo" /></Link>
         </div>
 
         <ul>
-            {/* <Link to="../pages/Home.jsx">Home</Link>
-            <Link to="../pages/Shop.jsx">Shop</Link>
-            <Link to="../pages/About.jsx">About</Link>
-            <Link to="../pages/Contact.jsx">Contact</Link> */}
+            <Link to="/">Home</Link>
+            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/courses">Courses</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
         </ul>
 
         <div className='menu'>
