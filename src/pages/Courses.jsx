@@ -2,7 +2,11 @@ import React from 'react'
 
 function Courses() {
   return (
-    <div>Courses</div>
+    <>
+    <div className="courses">
+      <h2>Courses</h2>
+    </div>
+    </>
   )
 }
 

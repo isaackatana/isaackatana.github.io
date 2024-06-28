@@ -3,7 +3,7 @@ import Logo from '../assets/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function Header() {
 
@@ -14,11 +14,11 @@ function Header() {
         </div>
 
         <ul>
-            <Link to="/">Home</Link>
-            <Link to="/portfolio">Portfolio</Link>
-            <Link to="/courses">Courses</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/portfolio">Portfolio</NavLink>
+            <NavLink to="/courses">Courses</NavLink>
+            <NavLink to="/about">About</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
         </ul>
 
         <div className='menu'>

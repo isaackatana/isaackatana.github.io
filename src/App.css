@@ -15,9 +15,10 @@ button {
 
 body {
   position: relative;
+  background-color: rgb(247, 247, 247);
+  overflow-x: hidden;
 }
-
-header {
+body header {
   background-color: #333333;
   display: flex;
   align-items: center;
@@ -28,33 +29,33 @@ header {
   z-index: 10;
 }
 @media (max-width: 425px) {
-  header {
+  body header {
     padding: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-header .logo {
+body header .logo {
   width: 120.1px;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-header .logo img {
+body header .logo img {
   width: 80px;
 }
 @media (max-width: 425px) {
-  header .logo img {
+  body header .logo img {
     width: 60px;
   }
 }
-header ul {
+body header ul {
   display: flex;
   gap: 15px;
 }
 @media (max-width: 425px) {
-  header ul {
+  body header ul {
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 69px;
     right: 0;
     background-color: rgb(51, 51, 51);
@@ -63,26 +64,32 @@ header ul {
     transform: translateX(100%);
   }
 }
-header ul a {
+body header ul a {
   color: white;
   padding: 15px;
 }
-header .menu {
+body header ul a:hover {
+  color: rgb(255, 217, 1);
+}
+body header ul .active {
+  color: rgb(255, 217, 1);
+}
+body header .menu {
   display: flex;
 }
 @media (max-width: 425px) {
-  header .menu {
+  body header .menu {
     align-items: center;
     gap: 10px;
   }
 }
-header .menu nav {
+body header .menu nav {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
-header .menu nav .social-media {
+body header .menu nav .social-media {
   display: flex;
   justify-content: end;
   gap: 8px;
@@ -90,52 +97,47 @@ header .menu nav .social-media {
   color: rgb(255, 255, 255);
 }
 @media (max-width: 425px) {
-  header .menu nav .social-media {
+  body header .menu nav .social-media {
     display: flex;
   }
 }
-header .menu nav .social-media svg {
+body header .menu nav .social-media svg {
   font-size: 25px;
   transition: 0.3s;
 }
-header .menu nav .social-media svg:hover {
+body header .menu nav .social-media svg:hover {
   color: rgb(255, 217, 1);
 }
-header .menu nav .user-acc {
+body header .menu nav .user-acc {
   display: flex;
   gap: 10px;
 }
-header .menu .burger {
+body header .menu .burger {
   display: none;
   cursor: pointer;
 }
 @media (max-width: 425px) {
-  header .menu .burger {
+  body header .menu .burger {
     display: block;
   }
 }
-header .menu .burger div {
+body header .menu .burger div {
   background-color: rgb(255, 255, 255);
   width: 25px;
   height: 3px;
   margin: 5px;
   border-radius: 3px;
 }
-header .menu .burger .active .line1 {
+body header .menu .burger .active .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
-header .menu .burger .active .line2 {
+body header .menu .burger .active .line2 {
   opacity: 0;
 }
-header .menu .burger .active .line3 {
+body header .menu .burger .active .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
-
-body {
-  background-color: rgb(247, 247, 247);
-}
-
-.hero {
+body .home {
   background: url("./assets/hero/img1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,22 +149,22 @@ body {
   justify-content: center;
   position: relative;
 }
-.hero .overlay {
+body .home .overlay {
   background-color: black;
   position: absolute;
   inset: 0;
   opacity: 50%;
 }
-.hero .wrapper {
+body .home .wrapper {
   color: white;
   z-index: 5;
 }
-.hero .wrapper div {
+body .home .wrapper div {
   color: white;
   z-index: 5;
   margin-bottom: 5px;
 }
-.hero .wrapper a {
+body .home .wrapper a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,42 +176,41 @@ body {
   text-decoration: none;
   color: black;
 }
-
-.portfolio {
+body .portfolio {
   padding: 30px 80px;
 }
 @media (max-width: 425px) {
-  .portfolio {
+  body .portfolio {
     padding: 20px;
   }
 }
-.portfolio h1 {
+body .portfolio h1 {
   padding-bottom: 20px;
   color: rgb(51, 51, 51);
 }
-.portfolio .container {
+body .portfolio .container {
   height: 400px;
   position: relative;
   display: flex;
   align-items: center;
 }
-.portfolio .container svg {
+body .portfolio .container svg {
   font-size: 100px;
   position: absolute;
   color: white;
   cursor: pointer;
   margin: 10px;
 }
-.portfolio .container svg:hover {
+body .portfolio .container svg:hover {
   color: rgb(255, 217, 1);
 }
-.portfolio .container .left {
+body .portfolio .container .left {
   left: 0;
 }
-.portfolio .container .right {
+body .portfolio .container .right {
   right: 0;
 }
-.portfolio .container .s-project {
+body .portfolio .container .s-project {
   background-color: rgb(51, 51, 51);
   width: 100%;
   height: 100%;
@@ -218,23 +219,160 @@ body {
   align-items: center;
   justify-content: center;
 }
-.portfolio .container .s-project iframe {
+body .portfolio .container .s-project iframe {
   height: 100%;
 }
-
-.blog {
+body .courses {
   padding: 30px 80px;
 }
 @media (max-width: 425px) {
-  .blog {
+  body .courses {
     padding: 20px;
   }
 }
-.blog h1 {
+body .courses h1 {
+  padding-bottom: 20px;
+  color: rgb(51, 51, 51);
+}
+body .courses .container {
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+body .courses .container svg {
+  font-size: 100px;
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+body .courses .container svg:hover {
+  color: rgb(255, 217, 1);
+}
+body .courses .container .left {
+  left: 0;
+}
+body .courses .container .right {
+  right: 0;
+}
+body .courses .container .s-project {
+  background-color: rgb(51, 51, 51);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .courses .container .s-project iframe {
+  height: 100%;
+}
+body .about {
+  padding: 30px 80px;
+}
+@media (max-width: 425px) {
+  body .about {
+    padding: 20px;
+  }
+}
+body .about h1 {
+  padding-bottom: 20px;
+  color: rgb(51, 51, 51);
+}
+body .about .container {
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+body .about .container svg {
+  font-size: 100px;
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+body .about .container svg:hover {
+  color: rgb(255, 217, 1);
+}
+body .about .container .left {
+  left: 0;
+}
+body .about .container .right {
+  right: 0;
+}
+body .about .container .s-project {
+  background-color: rgb(51, 51, 51);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .about .container .s-project iframe {
+  height: 100%;
+}
+body .contact {
+  padding: 30px 80px;
+}
+@media (max-width: 425px) {
+  body .contact {
+    padding: 20px;
+  }
+}
+body .contact h1 {
+  padding-bottom: 20px;
+  color: rgb(51, 51, 51);
+}
+body .contact .container {
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+body .contact .container svg {
+  font-size: 100px;
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+body .contact .container svg:hover {
+  color: rgb(255, 217, 1);
+}
+body .contact .container .left {
+  left: 0;
+}
+body .contact .container .right {
+  right: 0;
+}
+body .contact .container .s-project {
+  background-color: rgb(51, 51, 51);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .contact .container .s-project iframe {
+  height: 100%;
+}
+body .blog {
+  padding: 30px 80px;
+}
+@media (max-width: 425px) {
+  body .blog {
+    padding: 20px;
+  }
+}
+body .blog h1 {
   margin-bottom: 20px;
   color: rgb(51, 51, 51);
 }
-.blog .container {
+body .blog .container {
   display: flex;
   gap: 20px;
   overflow: hidden;
@@ -242,7 +380,7 @@ body {
   display: flex;
   align-items: center;
 }
-.blog .container svg {
+body .blog .container svg {
   font-size: 20px;
   position: absolute;
   color: rgb(51, 51, 51);
@@ -255,33 +393,33 @@ body {
   height: 30px;
 }
 @media (max-width: 425px) {
-  .blog .container svg {
+  body .blog .container svg {
     font-size: 37.5px;
   }
 }
-.blog .container svg:hover {
+body .blog .container svg:hover {
   color: rgb(51, 51, 51);
   background-color: rgb(255, 217, 1);
 }
-.blog .container .left {
+body .blog .container .left {
   left: 0;
   background-color: rgb(255, 255, 255);
 }
-.blog .container .right {
+body .blog .container .right {
   right: 0;
   background-color: rgb(255, 255, 255);
 }
-.blog .container .s-post {
+body .blog .container .s-post {
   position: relative;
   border-radius: 10px;
   background-color: rgb(51, 51, 51);
   cursor: pointer;
   height: 250px;
 }
-.blog .container .s-post:active {
+body .blog .container .s-post:active {
   cursor: grabbing;
 }
-.blog .container .s-post img {
+body .blog .container .s-post img {
   width: 250px;
   height: 140px;
   -o-object-fit: cover;
@@ -291,17 +429,17 @@ body {
   border-radius: 10px;
   margin: 10px;
 }
-.blog .container .s-post div {
+body .blog .container .s-post div {
   width: 250px;
   padding: 0 10px 10px;
 }
-.blog .container .s-post div h4 {
+body .blog .container .s-post div h4 {
   color: rgb(255, 255, 255);
 }
-.blog .container .s-post div p {
+body .blog .container .s-post div p {
   color: white;
 }
-.blog .container .s-post .remove {
+body .blog .container .s-post .remove {
   background-color: yellow;
   width: 100px;
   padding: 5px;
@@ -312,7 +450,7 @@ body {
   left: 0;
   cursor: pointer;
 }
-.blog .container .s-post .read-more {
+body .blog .container .s-post .read-more {
   position: absolute;
   color: rgb(255, 255, 255);
   cursor: pointer;
@@ -323,37 +461,37 @@ body {
   padding: 3px;
   font-size: 30px;
 }
-.blog .container .s-post .read-more:hover {
+body .blog .container .s-post .read-more:hover {
   color: rgb(255, 217, 1);
   background-color: rgb(51, 51, 51);
 }
-
-.newsletter {
+body .newsletter {
   padding: 30px 80px;
-  background: url("https://images7.alphacoders.com/133/1337527.png");
+  background: url("./assets/hero/img1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (max-width: 425px) {
-  .newsletter {
+  body .newsletter {
     padding: 20px;
   }
 }
-.newsletter .subscribe p {
+body .newsletter .subscribe p {
   margin-bottom: 10px;
+  color: white;
 }
-.newsletter .subscribe div {
+body .newsletter .subscribe form {
   display: flex;
   gap: 5px;
 }
-.newsletter .subscribe div input {
+body .newsletter .subscribe form input {
   padding: 8px;
   width: 200px;
   border-radius: 20px 0 0 20px;
   border: solid black 1px;
 }
-.newsletter .subscribe div button {
+body .newsletter .subscribe form button {
   width: 100px;
   border-radius: 0 20px 20px 0;
   border: none;
@@ -361,8 +499,7 @@ body {
   cursor: pointer;
   border: solid black 1px;
 }
-
-footer {
+body footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -372,24 +509,24 @@ footer {
   gap: 20px;
 }
 @media (max-width: 425px) {
-  footer {
+  body footer {
     padding: 20px;
   }
 }
-footer p {
+body footer p {
   color: rgb(255, 255, 255);
   font-size: small;
 }
-footer .social-media {
+body footer .social-media {
   display: flex;
   gap: 8px;
   cursor: pointer;
   color: rgb(255, 255, 255);
 }
-footer .social-media svg {
+body footer .social-media svg {
   font-size: 25px;
   transition: 0.3s;
 }
-footer .social-media svg:hover {
+body footer .social-media svg:hover {
   color: rgb(255, 217, 1);
 }/*# sourceMappingURL=App.css.map */
