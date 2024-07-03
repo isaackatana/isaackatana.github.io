@@ -229,15 +229,15 @@ body .portfolio .container .music-videos .wrapper {
 }
 body .portfolio .container .music-videos .wrapper svg {
   position: absolute;
-  color: #333333;
+  color: white;
   font-size: 50px;
   cursor: pointer;
 }
 body .portfolio .container .music-videos .wrapper .left {
-  left: 0;
+  left: 10px;
 }
 body .portfolio .container .music-videos .wrapper .right {
-  right: 0;
+  right: 10px;
 }
 body .portfolio .container .music-videos .wrapper div {
   width: 100%;
