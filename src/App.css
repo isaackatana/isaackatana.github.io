@@ -184,42 +184,72 @@ body .portfolio {
     padding: 20px;
   }
 }
-body .portfolio h1 {
-  padding-bottom: 20px;
+body .portfolio h2 {
+  margin-bottom: 20px;
   color: rgb(51, 51, 51);
 }
+body .portfolio .categories {
+  font-size: large;
+  background-color: rgb(255, 217, 1);
+  display: flex;
+}
+body .portfolio .categories a {
+  width: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+body .portfolio .categories a:hover {
+  background-color: #333333;
+  color: white;
+}
 body .portfolio .container {
-  height: 400px;
+  display: flex;
+  padding-top: 10px;
+}
+@media (max-width: 425px) {
+  body .portfolio .container {
+    padding-top: 10px;
+  }
+}
+body .portfolio .container .music-videos {
+  width: 100vw;
+}
+body .portfolio .container .music-videos h2 {
+  margin-bottom: 20px;
+  font-size: large;
+  background-color: rgb(255, 217, 1);
+  padding: 10px;
+}
+body .portfolio .container .music-videos .wrapper {
   position: relative;
   display: flex;
   align-items: center;
 }
-body .portfolio .container svg {
-  font-size: 100px;
+body .portfolio .container .music-videos .wrapper svg {
   position: absolute;
-  color: white;
+  color: #333333;
+  font-size: 50px;
   cursor: pointer;
-  margin: 10px;
 }
-body .portfolio .container svg:hover {
-  color: rgb(255, 217, 1);
-}
-body .portfolio .container .left {
+body .portfolio .container .music-videos .wrapper .left {
   left: 0;
 }
-body .portfolio .container .right {
+body .portfolio .container .music-videos .wrapper .right {
   right: 0;
 }
-body .portfolio .container .s-project {
-  background-color: rgb(51, 51, 51);
+body .portfolio .container .music-videos .wrapper div {
   width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 400px;
 }
-body .portfolio .container .s-project iframe {
+@media (max-width: 425px) {
+  body .portfolio .container .music-videos .wrapper div {
+    height: auto;
+  }
+}
+body .portfolio .container .music-videos .wrapper div iframe {
+  width: 100%;
   height: 100%;
 }
 body .courses {
@@ -281,37 +311,51 @@ body .about h1 {
   color: rgb(51, 51, 51);
 }
 body .about .container {
-  height: 400px;
+  display: flex;
+  padding-top: 10px;
+}
+@media (max-width: 425px) {
+  body .about .container {
+    padding-top: 10px;
+  }
+}
+body .about .container .music-videos {
+  width: 100vw;
+}
+body .about .container .music-videos h2 {
+  margin-bottom: 20px;
+  font-size: large;
+  background-color: rgb(255, 217, 1);
+  padding: 10px;
+}
+body .about .container .music-videos .wrapper {
   position: relative;
   display: flex;
   align-items: center;
 }
-body .about .container svg {
-  font-size: 100px;
+body .about .container .music-videos .wrapper svg {
   position: absolute;
-  color: white;
+  color: #333333;
+  font-size: 50px;
   cursor: pointer;
-  margin: 10px;
 }
-body .about .container svg:hover {
-  color: rgb(255, 217, 1);
-}
-body .about .container .left {
+body .about .container .music-videos .wrapper .left {
   left: 0;
 }
-body .about .container .right {
+body .about .container .music-videos .wrapper .right {
   right: 0;
 }
-body .about .container .s-project {
-  background-color: rgb(51, 51, 51);
+body .about .container .music-videos .wrapper div {
   width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 400px;
 }
-body .about .container .s-project iframe {
+@media (max-width: 425px) {
+  body .about .container .music-videos .wrapper div {
+    height: auto;
+  }
+}
+body .about .container .music-videos .wrapper div iframe {
+  width: 100%;
   height: 100%;
 }
 body .contact {
@@ -467,7 +511,7 @@ body .blog .container .s-post .read-more:hover {
 }
 body .newsletter {
   padding: 30px 80px;
-  background: url("./assets/hero/img1.jpg");
+  background: transparent;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

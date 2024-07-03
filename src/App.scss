@@ -207,48 +207,80 @@ body {
             padding: 20px;
         }
     
-        h1 {
-            padding-bottom: 20px;
+        h2 {
+            margin-bottom: 20px;
             color: rgb(51, 51, 51);
         }
-    
-        .container {
-            height: 400px;
-            position: relative;
+
+        .categories {
+            font-size: large;
+            background-color: rgb(255, 217, 1);
             display: flex;
-            align-items: center;
-    
-            svg {
-                font-size: 100px;
-                position: absolute;
-                color: white;
-                cursor: pointer;
-                margin: 10px;
-    
-                &:hover {
-                    color: rgb(255, 217, 1);
-                }
-            }
-    
-            .left {
-                left: 0;
-            }
-    
-            .right {
-                right: 0;
-            }
-    
-            .s-project {
-                background-color: rgb(51, 51, 51);
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
+
+            a {
+                width:125px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                padding: 10px;
+
+                &:hover {
+                    background-color: #333333;
+                    color: white;
+                }
+            }
+        }
     
-                iframe {
-                    height: 100%;
+        .container {
+            display: flex;
+            padding-top: 10px;
+
+            @include mobile(){
+                padding-top: 10px;
+            }
+
+            .music-videos {
+                width: 100vw;
+
+                h2 {
+                    margin-bottom: 20px;
+                    font-size: large;
+                    background-color: rgb(255, 217, 1);
+                    padding: 10px;
+                }
+
+                .wrapper {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        position: absolute;
+                        color: #333333;
+                        font-size: 50px;
+                        cursor: pointer;
+                    }
+
+                    .left {
+                        left: 0;
+                    }
+                    .right {
+                        right: 0;
+                    }
+
+                    div {
+                        width: 100%;
+                        height: 400px;
+
+                        @include mobile(){
+                            height: auto;
+                        }
+
+                        iframe {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
                 }
             }
         }
@@ -321,42 +353,55 @@ body {
         }
     
         .container {
-            height: 400px;
-            position: relative;
             display: flex;
-            align-items: center;
-    
-            svg {
-                font-size: 100px;
-                position: absolute;
-                color: white;
-                cursor: pointer;
-                margin: 10px;
-    
-                &:hover {
-                    color: rgb(255, 217, 1);
+            padding-top: 10px;
+
+            @include mobile(){
+                padding-top: 10px;
+            }
+
+            .music-videos {
+                width: 100vw;
+
+                h2 {
+                    margin-bottom: 20px;
+                    font-size: large;
+                    background-color: rgb(255, 217, 1);
+                    padding: 10px;
                 }
-            }
-    
-            .left {
-                left: 0;
-            }
-    
-            .right {
-                right: 0;
-            }
-    
-            .s-project {
-                background-color: rgb(51, 51, 51);
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-    
-                iframe {
-                    height: 100%;
+
+                .wrapper {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        position: absolute;
+                        color: #333333;
+                        font-size: 50px;
+                        cursor: pointer;
+                    }
+                    
+                    .left {
+                        left: 0;
+                    }
+                    .right {
+                        right: 0;
+                    }
+
+                    div {
+                        width: 100%;
+                        height: 400px;
+
+                        @include mobile(){
+                            height: auto;
+                        }
+
+                        iframe {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
                 }
             }
         }
@@ -535,7 +580,7 @@ body {
     
     .newsletter {
         padding: 30px 80px;
-        background: url("./assets/hero/img1.jpg");
+        background: transparent;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
