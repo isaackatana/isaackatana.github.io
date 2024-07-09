@@ -1,9 +1,6 @@
 import React from 'react'
-
-import IntroVideo from '../assets/hero/intro.mp4'
-import { NavLink } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowAltCircleLeft, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
+import { NavLink, Routes, Route } from 'react-router-dom'
+import MusicVideos from '../components/categories/MusicVideos'
 
 function Portfolio() {
   return (
@@ -11,21 +8,15 @@ function Portfolio() {
     <div className="portfolio">
       <h2>Portfolio</h2>
       <div className="categories">
-        <NavLink>Music Videos</NavLink>
-        <NavLink>Web Apps</NavLink>
-        <NavLink>Mobile Apps</NavLink>
+        <NavLink to='/categories/music-videos'>Music Videos</NavLink>
+        <NavLink to='/categories/web-apps'>Web Apps</NavLink>
+        <NavLink to='/categories/mobile-apps'>Mobile Apps</NavLink>
       </div>
       <div className='container'>
-        <div className="music-videos">
-           <h2>Music Videos</h2>
-          <div className="wrapper">
-            <FontAwesomeIcon className='left' icon={faArrowAltCircleLeft}/>
-            <FontAwesomeIcon className='right' icon={faArrowAltCircleRight}/>
-            <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LxcmF_Kk0Ho?si=anZUmV37oyN6ts4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
+          <Routes>
+            <Route path='/categories/music-videos' element={<MusicVideos/>}/>
+          </Routes>
+        
         {/* <div className="music-videos">
           <h2>Web Apps</h2>
           <div className="wrapper">

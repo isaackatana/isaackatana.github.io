@@ -62,7 +62,7 @@ body {
                 background-color: rgb(51, 51, 51);
                 width: 50vw;
                 height: 90vh;
-                transform: translateX(0%);
+                transform: translateX(100%);
             }
 
             a {
@@ -81,7 +81,7 @@ body {
         }
 
         .active {
-            transform: translateX(100%);
+            transform: translateX(0%);
         }
     
         .nav {
@@ -238,7 +238,13 @@ body {
                     color: white;
                 }
             }
+
+            .active {
+                background-color: #333333;
+            }
         }
+
+        
     
         .container {
             display: flex;
@@ -590,7 +596,7 @@ body {
     
     .newsletter {
         padding: 30px 80px;
-        background: url('https://cdn.prod.website-files.com/608a88369ffab4f5de1ed321/63f35253b68fbb93f5aedf7b_JavaScript-code.jpeg');
+        background-color: rgb(255, 217, 1);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -620,7 +626,7 @@ body {
                     width: 100px;
                     border-radius: 0 20px 20px 0;
                     border: none;
-                    background: rgb(255, 217, 1);
+                    background: white;
                     cursor: pointer;
                     border: solid black 1px;
                 }
