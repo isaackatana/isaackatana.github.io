@@ -52,6 +52,7 @@ body {
         ul {
             display: flex;
             gap: 15px;
+            transition: transform 0.3s ease-in-out;
     
             @include mobile(){
                 flex-direction: column;
@@ -59,9 +60,9 @@ body {
                 top: 69px;
                 right: 0;
                 background-color: rgb(51, 51, 51);
-                width: 100vw;
-                height: 50vh;
-                transform: translateX(100%);
+                width: 50vw;
+                height: 90vh;
+                transform: translateX(0%);
             }
 
             a {
@@ -75,10 +76,15 @@ body {
 
             .active {
                 color: rgb(255, 217, 1);
+                transform: translateX(0%);
             }
         }
+
+        .active {
+            transform: translateX(100%);
+        }
     
-        .menu {
+        .nav {
             display: flex;
     
             @include mobile(){
@@ -142,7 +148,7 @@ body {
                     margin: 5px;
                     border-radius: 3px;
                 }
-        
+
                 .active .line1 {
                     transform: rotate(-45deg) translate(-5px, 6px);
                 }
@@ -152,7 +158,10 @@ body {
                 .active .line3 {
                     transform: rotate(45deg) translate(-5px, -6px);
                 }
+                
             }
+
+            
         }
     }
     
@@ -270,10 +279,11 @@ body {
 
                     div {
                         width: 100%;
-                        height: 400px;
-
+                        height: 460px;
+                        position: relative;
+                        
                         @include mobile(){
-                            height: auto;
+                            height: 200px;
                         }
 
                         iframe {
@@ -580,7 +590,7 @@ body {
     
     .newsletter {
         padding: 30px 80px;
-        background: transparent;
+        background: url('https://cdn.prod.website-files.com/608a88369ffab4f5de1ed321/63f35253b68fbb93f5aedf7b_JavaScript-code.jpeg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -593,7 +603,6 @@ body {
     
             p {
                 margin-bottom: 10px;
-                color: white;
             }
     
             form {

@@ -4,8 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
 import { Link, NavLink } from 'react-router-dom'
+import { useState } from 'react'
 
 function Header() {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
 
   return (
     <header>
@@ -13,7 +20,7 @@ function Header() {
             <Link to="/"><img src={Logo} alt="Logo" /></Link>
         </div>
 
-        <ul>
+        <ul className={`menu burger ${isOpen ? 'active' : ''}`}>
             <NavLink to="/">Home</NavLink>
             <NavLink to="/portfolio">Portfolio</NavLink>
             <NavLink to="/courses">Courses</NavLink>
@@ -21,7 +28,7 @@ function Header() {
             <NavLink to="/contact">Contact</NavLink>
         </ul>
 
-        <div className='menu'>
+        <div className='nav'>
 
             <nav>
                 <div className='social-media'>
@@ -32,7 +39,7 @@ function Header() {
                 </div>
             </nav>
 
-            <div className='burger'>
+            <div className='burger' onClick={toggleMenu}>
                 <div className='line1'></div>
                 <div className='line2'></div>
                 <div className='line3'></div>
