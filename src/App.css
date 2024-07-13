@@ -106,11 +106,14 @@ body header .nav nav .social-media {
     display: flex;
   }
 }
-body header .nav nav .social-media svg {
+body header .nav nav .social-media a {
+  color: white;
+}
+body header .nav nav .social-media a svg {
   font-size: 25px;
   transition: 0.3s;
 }
-body header .nav nav .social-media svg:hover {
+body header .nav nav .social-media a svg:hover {
   color: rgb(255, 217, 1);
 }
 body header .nav nav .user-acc {
@@ -571,14 +574,23 @@ body footer p {
 }
 body footer .social-media {
   display: flex;
+  justify-content: end;
   gap: 8px;
   cursor: pointer;
   color: rgb(255, 255, 255);
 }
-body footer .social-media svg {
+@media (max-width: 425px) {
+  body footer .social-media {
+    display: flex;
+  }
+}
+body footer .social-media a {
+  color: white;
+}
+body footer .social-media a svg {
   font-size: 25px;
   transition: 0.3s;
 }
-body footer .social-media svg:hover {
+body footer .social-media a svg:hover {
   color: rgb(255, 217, 1);
 }/*# sourceMappingURL=App.css.map */

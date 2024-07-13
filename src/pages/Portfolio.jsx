@@ -1,8 +1,13 @@
 import React from 'react'
 import { NavLink, Routes, Route } from 'react-router-dom'
-import MusicVideos from '../components/categories/MusicVideos'
+import MusicVideos from '../components/portfolio/categories/MusicVideos'
 
 function Portfolio() {
+  const categories = [
+    {
+      link: '',
+    },
+  ]
   return (
     <>
     <div className="portfolio">

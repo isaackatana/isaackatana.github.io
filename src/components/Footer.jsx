@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -9,10 +10,10 @@ function Footer() {
         <p>©2024 Isaac Katana | All rights reserved.</p>
     </div>
     <div className='social-media'>
-        <FontAwesomeIcon icon={faFacebook} target='blank_'/>
-        <FontAwesomeIcon icon={faInstagram}/>
-        <FontAwesomeIcon icon={faXTwitter}/>
-        <FontAwesomeIcon icon={faGithub}/>
+        <Link to='facebook.com/1isaackatana' target='blank'><FontAwesomeIcon icon={faFacebook}/></Link>
+        <Link to='instagram.com/1isaackatana' target='blank'><FontAwesomeIcon icon={faInstagram}/></Link>
+        <Link to='instagram.com/1isaackatana' target='blank'><FontAwesomeIcon icon={faXTwitter}/></Link>
+        <Link to='instagram.com/1isaackatana' target='blank'><FontAwesomeIcon icon={faGithub}/></Link>
     </div>
     </footer>
   )

@@ -113,12 +113,15 @@ body {
                         display: flex;
                     }
             
-                    svg {
-                        font-size: 25px;
-                        transition: 0.3s;
-            
-                        &:hover {
-                            color: rgb(255, 217, 1);
+                    a {
+                        color: white;
+                        svg {
+                            font-size: 25px;
+                            transition: 0.3s;
+                
+                            &:hover {
+                                color: rgb(255, 217, 1);
+                            }
                         }
                     }
                 }
@@ -477,6 +480,8 @@ body {
         }
     }
 
+    // ......................
+
     .blog {
         padding: 30px 80px;
     
@@ -654,16 +659,24 @@ body {
     
         .social-media {
             display: flex;
+            justify-content: end;
             gap: 8px;
             cursor: pointer;
             color: rgb(255, 255, 255);
+
+            @include mobile(){
+                display: flex;
+            }
     
-            svg {
-                font-size: 25px;
-                transition: 0.3s;
-    
-                &:hover {
-                    color: rgb(255, 217, 1);
+            a {
+                color: white;
+                svg {
+                    font-size: 25px;
+                    transition: 0.3s;
+        
+                    &:hover {
+                        color: rgb(255, 217, 1);
+                    }
                 }
             }
         }

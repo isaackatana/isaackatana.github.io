@@ -32,10 +32,10 @@ function Header() {
 
             <nav>
                 <div className='social-media'>
-                    <FontAwesomeIcon icon={faFacebook}/>
-                    <FontAwesomeIcon icon={faInstagram}/>
-                    <FontAwesomeIcon icon={faXTwitter}/>
-                    <FontAwesomeIcon icon={faGithub}/>
+                    <Link to='facebook.com/1isaackatana' target='blank'><FontAwesomeIcon icon={faFacebook}/></Link>
+                    <Link to='instagram.com/1isaackatana' target='blank'><FontAwesomeIcon icon={faInstagram}/></Link>
+                    <Link to='instagram.com/1isaackatana' target='blank'><FontAwesomeIcon icon={faXTwitter}/></Link>
+                    <Link to='instagram.com/1isaackatana' target='blank'><FontAwesomeIcon icon={faGithub}/></Link>
                 </div>
             </nav>
 
