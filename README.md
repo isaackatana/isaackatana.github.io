@@ -1,1 +1,0 @@
-[text](https://isaackatana.com)
