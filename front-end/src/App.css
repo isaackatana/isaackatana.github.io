@@ -146,7 +146,7 @@ body header .nav .burger .active .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 body .home {
-  background: url("./assets/hero/img1.jpg");
+  background: url("./pages/home/imgs/img1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
