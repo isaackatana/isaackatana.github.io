@@ -1,0 +1,515 @@
+button {
+  padding: 8px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(255, 217, 1);
+  width: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Alaska, sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: rgb(247, 247, 247);
+  overflow-x: hidden;
+}
+body header {
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 80px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+@media (max-width: 425px) {
+  body header {
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+body header .logo {
+  width: 120.1px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+body header .logo img {
+  width: 80px;
+}
+@media (max-width: 425px) {
+  body header .logo img {
+    width: 60px;
+  }
+}
+body header ul {
+  display: flex;
+  gap: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+@media (max-width: 425px) {
+  body header ul {
+    flex-direction: column;
+    position: fixed;
+    top: 69px;
+    right: 0;
+    background-color: rgb(51, 51, 51);
+    width: 50vw;
+    height: 90vh;
+    transform: translateX(100%);
+  }
+}
+body header ul a {
+  color: white;
+  padding: 15px;
+}
+body header ul a:hover {
+  color: rgb(255, 217, 1);
+}
+body header ul .active {
+  color: rgb(255, 217, 1);
+  transform: translateX(0%);
+}
+body header .active {
+  transform: translateX(0%);
+}
+body header .nav {
+  display: flex;
+}
+@media (max-width: 425px) {
+  body header .nav {
+    align-items: center;
+    gap: 10px;
+  }
+}
+body header .nav nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+body header .nav nav .social-media {
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 425px) {
+  body header .nav nav .social-media {
+    display: flex;
+  }
+}
+body header .nav nav .social-media a {
+  color: white;
+}
+body header .nav nav .social-media a svg {
+  font-size: 25px;
+  transition: 0.3s;
+}
+body header .nav nav .social-media a svg:hover {
+  color: rgb(255, 217, 1);
+}
+body header .nav nav .user-acc {
+  display: flex;
+  gap: 10px;
+}
+body header .nav .burger {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 425px) {
+  body header .nav .burger {
+    display: block;
+  }
+}
+body header .nav .burger div {
+  background-color: rgb(255, 255, 255);
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  border-radius: 3px;
+}
+body header .nav .burger .active .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+body header .nav .burger .active .line2 {
+  opacity: 0;
+}
+body header .nav .burger .active .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+body .home {
+  background: url("./pages/home/imgs/img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+body .home .overlay {
+  background-color: black;
+  position: absolute;
+  inset: 0;
+  opacity: 50%;
+}
+body .home .wrapper {
+  color: white;
+  z-index: 5;
+}
+body .home .wrapper div {
+  color: white;
+  z-index: 5;
+  margin-bottom: 5px;
+}
+body .home .wrapper a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 125px;
+  background-color: rgb(255, 217, 1);
+  padding: 8px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+}
+body .portfolio {
+  padding: 30px 80px;
+}
+@media (max-width: 425px) {
+  body .portfolio {
+    padding: 20px;
+  }
+}
+body .portfolio h2 {
+  margin-bottom: 20px;
+  color: rgb(51, 51, 51);
+}
+body .portfolio .categories {
+  font-size: large;
+  background-color: rgb(255, 217, 1);
+  display: flex;
+}
+body .portfolio .categories a {
+  width: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+body .portfolio .categories a:hover {
+  background-color: #333333;
+  color: white;
+}
+body .portfolio .categories .active {
+  background-color: #333333;
+}
+body .portfolio .container {
+  display: flex;
+  padding-top: 10px;
+}
+@media (max-width: 425px) {
+  body .portfolio .container {
+    padding-top: 10px;
+  }
+}
+body .portfolio .container .music-videos {
+  width: 100vw;
+}
+body .portfolio .container .music-videos h2 {
+  margin-bottom: 20px;
+  font-size: large;
+  background-color: rgb(255, 217, 1);
+  padding: 10px;
+}
+body .portfolio .container .music-videos .wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+body .portfolio .container .music-videos .wrapper svg {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+body .portfolio .container .music-videos .wrapper .left {
+  left: 10px;
+}
+body .portfolio .container .music-videos .wrapper .right {
+  right: 10px;
+}
+body .portfolio .container .music-videos .wrapper div {
+  width: 100%;
+  height: 460px;
+  position: relative;
+}
+@media (max-width: 425px) {
+  body .portfolio .container .music-videos .wrapper div {
+    height: 200px;
+  }
+}
+body .portfolio .container .music-videos .wrapper div iframe {
+  width: 100%;
+  height: 100%;
+}
+body .courses {
+  padding: 30px 80px;
+}
+@media (max-width: 425px) {
+  body .courses {
+    padding: 20px;
+  }
+}
+body .courses h1 {
+  padding-bottom: 20px;
+  color: rgb(51, 51, 51);
+}
+body .courses .container {
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+body .courses .container svg {
+  font-size: 100px;
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+body .courses .container svg:hover {
+  color: rgb(255, 217, 1);
+}
+body .courses .container .left {
+  left: 0;
+}
+body .courses .container .right {
+  right: 0;
+}
+body .courses .container .s-project {
+  background-color: rgb(51, 51, 51);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .courses .container .s-project iframe {
+  height: 100%;
+}
+body .about {
+  padding: 30px 80px;
+}
+@media (max-width: 425px) {
+  body .about {
+    padding: 20px;
+  }
+}
+body .about h1 {
+  padding-bottom: 20px;
+  color: rgb(51, 51, 51);
+}
+body .about .container {
+  display: flex;
+  padding-top: 10px;
+}
+@media (max-width: 425px) {
+  body .about .container {
+    padding-top: 10px;
+  }
+}
+body .about .container .music-videos {
+  width: 100vw;
+}
+body .about .container .music-videos h2 {
+  margin-bottom: 20px;
+  font-size: large;
+  background-color: rgb(255, 217, 1);
+  padding: 10px;
+}
+body .about .container .music-videos .wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+body .about .container .music-videos .wrapper svg {
+  position: absolute;
+  color: #333333;
+  font-size: 50px;
+  cursor: pointer;
+}
+body .about .container .music-videos .wrapper .left {
+  left: 0;
+}
+body .about .container .music-videos .wrapper .right {
+  right: 0;
+}
+body .about .container .music-videos .wrapper div {
+  width: 100%;
+  height: 400px;
+}
+@media (max-width: 425px) {
+  body .about .container .music-videos .wrapper div {
+    height: auto;
+  }
+}
+body .about .container .music-videos .wrapper div iframe {
+  width: 100%;
+  height: 100%;
+}
+body .contact {
+  padding: 30px 80px;
+}
+@media (max-width: 425px) {
+  body .contact {
+    padding: 20px;
+  }
+}
+body .contact h1 {
+  padding-bottom: 20px;
+  color: rgb(51, 51, 51);
+}
+body .contact .container {
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+body .contact .container svg {
+  font-size: 100px;
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+body .contact .container svg:hover {
+  color: rgb(255, 217, 1);
+}
+body .contact .container .left {
+  left: 0;
+}
+body .contact .container .right {
+  right: 0;
+}
+body .contact .container .s-project {
+  background-color: rgb(51, 51, 51);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .contact .container .s-project iframe {
+  height: 100%;
+}
+body .blog {
+  padding: 30px 80px;
+}
+@media (max-width: 425px) {
+  body .blog {
+    padding: 20px;
+  }
+}
+body .blog .container {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+body .blog .container .post {
+  width: 700px;
+}
+body .blog .container .post div {
+  top: 0;
+  padding: 10px;
+  position: absolute;
+}
+body .newsletter {
+  padding: 30px 80px;
+  background-color: rgb(255, 217, 1);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 425px) {
+  body .newsletter {
+    padding: 20px;
+  }
+}
+body .newsletter .subscribe p {
+  margin-bottom: 10px;
+}
+body .newsletter .subscribe form {
+  display: flex;
+  gap: 5px;
+}
+body .newsletter .subscribe form input {
+  padding: 8px;
+  width: 200px;
+  border-radius: 20px 0 0 20px;
+  border: solid black 1px;
+}
+body .newsletter .subscribe form button {
+  width: 100px;
+  border-radius: 0 20px 20px 0;
+  border: none;
+  background: white;
+  cursor: pointer;
+  border: solid black 1px;
+}
+body footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(51, 51, 51);
+  padding: 30px 80px;
+  gap: 20px;
+}
+@media (max-width: 425px) {
+  body footer {
+    padding: 20px;
+  }
+}
+body footer p {
+  color: rgb(255, 255, 255);
+  font-size: small;
+}
+body footer .social-media {
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 425px) {
+  body footer .social-media {
+    display: flex;
+  }
+}
+body footer .social-media a {
+  color: white;
+}
+body footer .social-media a svg {
+  font-size: 25px;
+  transition: 0.3s;
+}
+body footer .social-media a svg:hover {
+  color: rgb(255, 217, 1);
+}/*# sourceMappingURL=App.css.map */
