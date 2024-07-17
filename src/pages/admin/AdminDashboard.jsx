@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
+import Blog from '../blog/Blog'
 
 function AdminDashboard() {
   return (
@@ -18,6 +19,7 @@ function AdminDashboard() {
           <Link to=''>Subscription</Link>
         </div>
     </div>
+    <Blog/>
     </>
   )
 }
