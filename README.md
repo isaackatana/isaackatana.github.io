@@ -1,3 +1,3 @@
 # Isaac Katana
 
-- [Portfolio](https://isaackatana.com/portfolio/) for Fast Refresh
+- [Enter](https://isaackatana.com/)
