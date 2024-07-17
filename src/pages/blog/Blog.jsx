@@ -20,7 +20,7 @@ function Blog() {
             <img src={Img1} alt="" />
           </div>
           <div className='details'>
-            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, voluptatibus?</h3>
+            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, voluptatibus?</h2>
             <p>Just now </p>
             <Link to='/blog/articles/post-container'>Read more</Link>
           </div>

@@ -475,9 +475,9 @@ body main .blog .container .post-preview .details {
   position: absolute;
   bottom: 0;
   padding: 10px;
-  background: linear-gradient(transparent, #333333);
+  background: linear-gradient(transparent, #000000);
 }
-body main .blog .container .post-preview .details h3, body main .blog .container .post-preview .details p {
+body main .blog .container .post-preview .details h2, body main .blog .container .post-preview .details p {
   margin-bottom: 5px;
   color: white;
 }
