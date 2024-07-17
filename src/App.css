@@ -162,6 +162,9 @@ body header .nav .line2.active {
 body header .nav .line3.active {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+body main {
+  position: relative;
+}
 body main .home {
   background: url("./pages/home/imgs/img1.jpg");
   background-repeat: no-repeat;
@@ -482,14 +485,16 @@ body main .blog .container .post-preview .details a {
   color: rgb(255, 217, 1);
 }
 body main .previous-page {
+  position: absolute;
+  top: 20px;
+  right: 80px;
   display: flex;
   justify-content: end;
   font-size: xx-large;
-  padding: 15px 80px;
 }
 @media (max-width: 425px) {
   body main .previous-page {
-    padding: 10px 20px;
+    right: 20px;
   }
 }
 body main .previous-page a {
@@ -497,14 +502,14 @@ body main .previous-page a {
 }
 body main .post-container {
   width: 60vw;
-  padding: 0px 80px;
+  padding: 30px 80px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 @media (max-width: 425px) {
   body main .post-container {
-    padding: 0 20px;
+    padding: 20px;
     width: auto;
   }
 }

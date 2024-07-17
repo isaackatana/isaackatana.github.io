@@ -185,6 +185,7 @@ body {
     }
     
     main {
+        position: relative;
 
         .home {
             background: url("./pages/home/imgs/img1.jpg");
@@ -552,13 +553,15 @@ body {
         }
 
         .previous-page {
+            position: absolute;
+            top: 20px;
+            right: 80px;
             display: flex;
             justify-content: end;
             font-size: xx-large;
-            padding: 15px 80px;
 
             @include mobile(){
-                padding: 10px 20px;
+                right: 20px;
             }
 
             a {
@@ -568,13 +571,13 @@ body {
 
         .post-container {
             width: 60vw;
-            padding: 0px 80px;
+            padding: 30px 80px;
             display: flex;
             flex-direction: column;
             gap: 10px;
 
             @include mobile(){
-                padding: 0 20px;
+                padding: 20px;
                 width: auto;
             }
             img {
