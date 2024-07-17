@@ -567,7 +567,7 @@ body main .post-container .leave-a-comment .comment-input form div {
   justify-content: end;
 }
 body main .post-container .leave-a-comment .comment-display {
-  height: 375px;
+  max-height: 375px;
   overflow-y: scroll;
 }
 body main .post-container .leave-a-comment .comment-display .comment {
