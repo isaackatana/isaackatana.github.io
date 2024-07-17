@@ -9,6 +9,8 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Portfolio from './pages/Portfolio'
 import Blog from './pages/blog/Blog'
+import PostContainer from './pages/blog/PostContainer'
+import Admin from './pages/admin/AdminDashboard'
 
 function App() {
 
@@ -28,6 +30,8 @@ function App() {
           <Route path="/portfolio" element={<Portfolio/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/about" element={<About/>}/>
+          <Route path='/blog/articles/post-container' element={<PostContainer/>}></Route>
+          <Route path='/admin' element={<Admin/>}></Route>
         </Routes>
       </main>
       <Newsletter/>

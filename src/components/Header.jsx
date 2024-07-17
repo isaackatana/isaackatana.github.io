@@ -6,6 +6,7 @@ import { faFacebook, faGithub, faInstagram, faXTwitter } from '@fortawesome/free
 
 import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 function Header() {
 
@@ -39,6 +40,10 @@ function Header() {
                     <Link to='instagram.com/1isaackatana' target='blank'><FontAwesomeIcon icon={faGithub}/></Link>
                 </div>
             </nav>
+
+            <div className="admin-profile">
+                <FontAwesomeIcon icon={faUser}/>
+            </div>
 
             <div className='burger' onClick={toggleMenu}>
                 <div className='line1'></div>

@@ -86,6 +86,8 @@ body {
     
         .nav {
             display: flex;
+            align-items: center;
+            gap: 10px;
     
             @include mobile(){
                 align-items: center;
@@ -134,6 +136,22 @@ body {
                     // }
                 }
         
+            }
+
+            .admin-profile {
+                background-color: white;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 25px;
+                cursor: pointer;
+
+                svg {
+                    color: rgb(255, 217, 1);
+                    font-size: 30px;
+                }
             }
             
             .burger {
@@ -492,17 +510,92 @@ body {
             gap: 20px;
             overflow: hidden;
             position: relative;
-            display: flex;
-            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
 
-            .post {
-                width: 700px;
+            @include mobile(){
+                grid-template-columns: 1fr;
+            }
 
-                div {
-                    top: 0;
-                    padding: 10px;
-                    position: absolute;
+            .post-preview {
+                height: 300px;
+                position: relative;
+
+                .thumbnail {
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
+
+                .details {
+                    position: absolute;
+                    bottom: 0;
+                    padding: 10px;
+                    background: linear-gradient(transparent, #333333);
+
+                    h2,p {
+                        margin-bottom: 5px;
+                        color: white;
+                    }
+
+                    a {
+                        color: rgb(255, 217, 1);
+                    }
+                }
+            }
+        }
+    }
+
+    .post-container {
+        width: 60vw;
+        padding: 30px 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        @include mobile(){
+            padding: 20px;
+            width: auto;
+        }
+
+        img {
+            width: 100%;
+            height: 375px;
+
+            @include mobile(){
+                height: 255px;
+            }
+        }
+
+        iframe {
+            height: 375px;
+
+            @include mobile(){
+                height: 255px;
+            }
+        }
+    }
+
+    .admin-dashboard {
+        padding: 30px 80px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            a {
+                width: 100px;
+                padding: 10px;
+                background-color: #333333;
+                color: white;
+                display: flex;
+                justify-content: center;
             }
         }
     }

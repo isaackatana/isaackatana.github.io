@@ -81,6 +81,8 @@ body header .active {
 }
 body header .nav {
   display: flex;
+  align-items: center;
+  gap: 10px;
 }
 @media (max-width: 425px) {
   body header .nav {
@@ -119,6 +121,20 @@ body header .nav nav .social-media a svg:hover {
 body header .nav nav .user-acc {
   display: flex;
   gap: 10px;
+}
+body header .nav .admin-profile {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  cursor: pointer;
+}
+body header .nav .admin-profile svg {
+  color: rgb(255, 217, 1);
+  font-size: 30px;
 }
 body header .nav .burger {
   display: none;
@@ -429,16 +445,86 @@ body .blog .container {
   gap: 20px;
   overflow: hidden;
   position: relative;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-body .blog .container .post {
-  width: 700px;
+@media (max-width: 425px) {
+  body .blog .container {
+    grid-template-columns: 1fr;
+  }
 }
-body .blog .container .post div {
-  top: 0;
-  padding: 10px;
+body .blog .container .post-preview {
+  height: 300px;
+  position: relative;
+}
+body .blog .container .post-preview .thumbnail {
+  width: 100%;
+  height: 100%;
+}
+body .blog .container .post-preview .thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .blog .container .post-preview .details {
   position: absolute;
+  bottom: 0;
+  padding: 10px;
+  background: linear-gradient(transparent, #333333);
+}
+body .blog .container .post-preview .details h2, body .blog .container .post-preview .details p {
+  margin-bottom: 5px;
+  color: white;
+}
+body .blog .container .post-preview .details a {
+  color: rgb(255, 217, 1);
+}
+body .post-container {
+  width: 60vw;
+  padding: 30px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 425px) {
+  body .post-container {
+    padding: 20px;
+    width: auto;
+  }
+}
+body .post-container img {
+  width: 100%;
+  height: 375px;
+}
+@media (max-width: 425px) {
+  body .post-container img {
+    height: 255px;
+  }
+}
+body .post-container iframe {
+  height: 375px;
+}
+@media (max-width: 425px) {
+  body .post-container iframe {
+    height: 255px;
+  }
+}
+body .admin-dashboard {
+  padding: 30px 80px;
+}
+body .admin-dashboard div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .admin-dashboard div a {
+  width: 100px;
+  padding: 10px;
+  background-color: #333333;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 body .newsletter {
   padding: 30px 80px;
