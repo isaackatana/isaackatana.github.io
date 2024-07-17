@@ -41,9 +41,11 @@ function Header() {
                 </div>
             </nav>
 
-            <div className="admin-profile">
-                <FontAwesomeIcon icon={faUser}/>
-            </div>
+            <Link to='/admin'>
+                <div className="admin-profile">
+                    <FontAwesomeIcon icon={faUser}/>
+                </div>
+            </Link>
 
             <div className='burger' onClick={toggleMenu} >
                 <div className={`line1 ${isOpen ? 'active' : ''}`}></div>
