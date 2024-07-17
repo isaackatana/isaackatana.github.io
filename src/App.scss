@@ -625,6 +625,10 @@ body {
                 margin: 10px 0 10px;
                 border-radius: 50px;
 
+                @include mobile(){
+                    border-radius: 0;
+                }
+
                 .react {
                     display: flex;
                     align-items: center;

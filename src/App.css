@@ -559,6 +559,11 @@ body main .post-container .user-opinion {
   margin: 10px 0 10px;
   border-radius: 50px;
 }
+@media (max-width: 425px) {
+  body main .post-container .user-opinion {
+    border-radius: 0;
+  }
+}
 body main .post-container .user-opinion .react {
   display: flex;
   align-items: center;
