@@ -48,16 +48,16 @@ body header .logo img {
     width: 60px;
   }
 }
-body header ul {
+body header .menu {
   display: flex;
   gap: 15px;
   transition: transform 0.3s ease-in-out;
 }
 @media (max-width: 425px) {
-  body header ul {
+  body header .menu {
     flex-direction: column;
     position: fixed;
-    top: 69px;
+    top: 80px;
     right: 0;
     background-color: rgb(51, 51, 51);
     width: 50vw;
@@ -65,14 +65,14 @@ body header ul {
     transform: translateX(100%);
   }
 }
-body header ul a {
+body header .menu a {
   color: white;
   padding: 15px;
 }
-body header ul a:hover {
+body header .menu a:hover {
   color: rgb(255, 217, 1);
 }
-body header ul .active {
+body header .menu .active {
   color: rgb(255, 217, 1);
   transform: translateX(0%);
 }
@@ -82,7 +82,7 @@ body header .active {
 body header .nav {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 @media (max-width: 425px) {
   body header .nav {
@@ -124,8 +124,8 @@ body header .nav nav .user-acc {
 }
 body header .nav .admin-profile {
   background-color: white;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,7 +134,7 @@ body header .nav .admin-profile {
 }
 body header .nav .admin-profile svg {
   color: rgb(255, 217, 1);
-  font-size: 30px;
+  font-size: 20px;
 }
 body header .nav .burger {
   display: none;
@@ -151,17 +151,18 @@ body header .nav .burger div {
   height: 3px;
   margin: 5px;
   border-radius: 3px;
+  transition: transform 0.3s ease-in-out;
 }
-body header .nav .burger .active .line1 {
+body header .nav .line1.active {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
-body header .nav .burger .active .line2 {
+body header .nav .line2.active {
   opacity: 0;
 }
-body header .nav .burger .active .line3 {
+body header .nav .line3.active {
   transform: rotate(45deg) translate(-5px, -6px);
 }
-body .home {
+body main .home {
   background: url("./pages/home/imgs/img1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -173,22 +174,22 @@ body .home {
   justify-content: center;
   position: relative;
 }
-body .home .overlay {
+body main .home .overlay {
   background-color: black;
   position: absolute;
   inset: 0;
   opacity: 50%;
 }
-body .home .wrapper {
+body main .home .wrapper {
   color: white;
   z-index: 5;
 }
-body .home .wrapper div {
+body main .home .wrapper div {
   color: white;
   z-index: 5;
   margin-bottom: 5px;
 }
-body .home .wrapper a {
+body main .home .wrapper a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,121 +201,121 @@ body .home .wrapper a {
   text-decoration: none;
   color: black;
 }
-body .portfolio {
+body main .portfolio {
   padding: 30px 80px;
 }
 @media (max-width: 425px) {
-  body .portfolio {
+  body main .portfolio {
     padding: 20px;
   }
 }
-body .portfolio h2 {
+body main .portfolio h2 {
   margin-bottom: 20px;
   color: rgb(51, 51, 51);
 }
-body .portfolio .categories {
+body main .portfolio .categories {
   font-size: large;
   background-color: rgb(255, 217, 1);
   display: flex;
 }
-body .portfolio .categories a {
+body main .portfolio .categories a {
   width: 125px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
 }
-body .portfolio .categories a:hover {
+body main .portfolio .categories a:hover {
   background-color: #333333;
   color: white;
 }
-body .portfolio .categories .active {
+body main .portfolio .categories .active {
   background-color: #333333;
 }
-body .portfolio .container {
+body main .portfolio .container {
   display: flex;
   padding-top: 10px;
 }
 @media (max-width: 425px) {
-  body .portfolio .container {
+  body main .portfolio .container {
     padding-top: 10px;
   }
 }
-body .portfolio .container .music-videos {
+body main .portfolio .container .music-videos {
   width: 100vw;
 }
-body .portfolio .container .music-videos h2 {
+body main .portfolio .container .music-videos h2 {
   margin-bottom: 20px;
   font-size: large;
   background-color: rgb(255, 217, 1);
   padding: 10px;
 }
-body .portfolio .container .music-videos .wrapper {
+body main .portfolio .container .music-videos .wrapper {
   position: relative;
   display: flex;
   align-items: center;
 }
-body .portfolio .container .music-videos .wrapper svg {
+body main .portfolio .container .music-videos .wrapper svg {
   position: absolute;
   color: white;
   font-size: 50px;
   cursor: pointer;
 }
-body .portfolio .container .music-videos .wrapper .left {
+body main .portfolio .container .music-videos .wrapper .left {
   left: 10px;
 }
-body .portfolio .container .music-videos .wrapper .right {
+body main .portfolio .container .music-videos .wrapper .right {
   right: 10px;
 }
-body .portfolio .container .music-videos .wrapper div {
+body main .portfolio .container .music-videos .wrapper div {
   width: 100%;
   height: 460px;
   position: relative;
 }
 @media (max-width: 425px) {
-  body .portfolio .container .music-videos .wrapper div {
+  body main .portfolio .container .music-videos .wrapper div {
     height: 200px;
   }
 }
-body .portfolio .container .music-videos .wrapper div iframe {
+body main .portfolio .container .music-videos .wrapper div iframe {
   width: 100%;
   height: 100%;
 }
-body .courses {
+body main .courses {
   padding: 30px 80px;
 }
 @media (max-width: 425px) {
-  body .courses {
+  body main .courses {
     padding: 20px;
   }
 }
-body .courses h1 {
+body main .courses h1 {
   padding-bottom: 20px;
   color: rgb(51, 51, 51);
 }
-body .courses .container {
+body main .courses .container {
   height: 400px;
   position: relative;
   display: flex;
   align-items: center;
 }
-body .courses .container svg {
+body main .courses .container svg {
   font-size: 100px;
   position: absolute;
   color: white;
   cursor: pointer;
   margin: 10px;
 }
-body .courses .container svg:hover {
+body main .courses .container svg:hover {
   color: rgb(255, 217, 1);
 }
-body .courses .container .left {
+body main .courses .container .left {
   left: 0;
 }
-body .courses .container .right {
+body main .courses .container .right {
   right: 0;
 }
-body .courses .container .s-project {
+body main .courses .container .s-project {
   background-color: rgb(51, 51, 51);
   width: 100%;
   height: 100%;
@@ -323,104 +324,104 @@ body .courses .container .s-project {
   align-items: center;
   justify-content: center;
 }
-body .courses .container .s-project iframe {
+body main .courses .container .s-project iframe {
   height: 100%;
 }
-body .about {
+body main .about {
   padding: 30px 80px;
 }
 @media (max-width: 425px) {
-  body .about {
+  body main .about {
     padding: 20px;
   }
 }
-body .about h1 {
+body main .about h1 {
   padding-bottom: 20px;
   color: rgb(51, 51, 51);
 }
-body .about .container {
+body main .about .container {
   display: flex;
   padding-top: 10px;
 }
 @media (max-width: 425px) {
-  body .about .container {
+  body main .about .container {
     padding-top: 10px;
   }
 }
-body .about .container .music-videos {
+body main .about .container .music-videos {
   width: 100vw;
 }
-body .about .container .music-videos h2 {
+body main .about .container .music-videos h2 {
   margin-bottom: 20px;
   font-size: large;
   background-color: rgb(255, 217, 1);
   padding: 10px;
 }
-body .about .container .music-videos .wrapper {
+body main .about .container .music-videos .wrapper {
   position: relative;
   display: flex;
   align-items: center;
 }
-body .about .container .music-videos .wrapper svg {
+body main .about .container .music-videos .wrapper svg {
   position: absolute;
   color: #333333;
   font-size: 50px;
   cursor: pointer;
 }
-body .about .container .music-videos .wrapper .left {
+body main .about .container .music-videos .wrapper .left {
   left: 0;
 }
-body .about .container .music-videos .wrapper .right {
+body main .about .container .music-videos .wrapper .right {
   right: 0;
 }
-body .about .container .music-videos .wrapper div {
+body main .about .container .music-videos .wrapper div {
   width: 100%;
   height: 400px;
 }
 @media (max-width: 425px) {
-  body .about .container .music-videos .wrapper div {
+  body main .about .container .music-videos .wrapper div {
     height: auto;
   }
 }
-body .about .container .music-videos .wrapper div iframe {
+body main .about .container .music-videos .wrapper div iframe {
   width: 100%;
   height: 100%;
 }
-body .contact {
+body main .contact {
   padding: 30px 80px;
 }
 @media (max-width: 425px) {
-  body .contact {
+  body main .contact {
     padding: 20px;
   }
 }
-body .contact h1 {
+body main .contact h1 {
   padding-bottom: 20px;
   color: rgb(51, 51, 51);
 }
-body .contact .container {
+body main .contact .container {
   height: 400px;
   position: relative;
   display: flex;
   align-items: center;
 }
-body .contact .container svg {
+body main .contact .container svg {
   font-size: 100px;
   position: absolute;
   color: white;
   cursor: pointer;
   margin: 10px;
 }
-body .contact .container svg:hover {
+body main .contact .container svg:hover {
   color: rgb(255, 217, 1);
 }
-body .contact .container .left {
+body main .contact .container .left {
   left: 0;
 }
-body .contact .container .right {
+body main .contact .container .right {
   right: 0;
 }
-body .contact .container .s-project {
+body main .contact .container .s-project {
   background-color: rgb(51, 51, 51);
   width: 100%;
   height: 100%;
@@ -429,18 +430,18 @@ body .contact .container .s-project {
   align-items: center;
   justify-content: center;
 }
-body .contact .container .s-project iframe {
+body main .contact .container .s-project iframe {
   height: 100%;
 }
-body .blog {
+body main .blog {
   padding: 30px 80px;
 }
 @media (max-width: 425px) {
-  body .blog {
+  body main .blog {
     padding: 20px;
   }
 }
-body .blog .container {
+body main .blog .container {
   display: flex;
   gap: 20px;
   overflow: hidden;
@@ -449,76 +450,153 @@ body .blog .container {
   grid-template-columns: 1fr 1fr;
 }
 @media (max-width: 425px) {
-  body .blog .container {
+  body main .blog .container {
     grid-template-columns: 1fr;
   }
 }
-body .blog .container .post-preview {
+body main .blog .container .post-preview {
   height: 300px;
   position: relative;
 }
-body .blog .container .post-preview .thumbnail {
+body main .blog .container .post-preview .thumbnail {
   width: 100%;
   height: 100%;
 }
-body .blog .container .post-preview .thumbnail img {
+body main .blog .container .post-preview .thumbnail img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-body .blog .container .post-preview .details {
+body main .blog .container .post-preview .details {
   position: absolute;
   bottom: 0;
   padding: 10px;
   background: linear-gradient(transparent, #333333);
 }
-body .blog .container .post-preview .details h2, body .blog .container .post-preview .details p {
+body main .blog .container .post-preview .details h2, body main .blog .container .post-preview .details p {
   margin-bottom: 5px;
   color: white;
 }
-body .blog .container .post-preview .details a {
+body main .blog .container .post-preview .details a {
   color: rgb(255, 217, 1);
 }
-body .post-container {
+body main .previous-page {
+  display: flex;
+  justify-content: end;
+  font-size: xx-large;
+  padding: 15px 80px;
+}
+@media (max-width: 425px) {
+  body main .previous-page {
+    padding: 10px 20px;
+  }
+}
+body main .previous-page a {
+  color: black;
+}
+body main .post-container {
   width: 60vw;
-  padding: 30px 80px;
+  padding: 0px 80px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 @media (max-width: 425px) {
-  body .post-container {
-    padding: 20px;
+  body main .post-container {
+    padding: 0 20px;
     width: auto;
   }
 }
-body .post-container img {
+body main .post-container img {
   width: 100%;
   height: 375px;
 }
 @media (max-width: 425px) {
-  body .post-container img {
+  body main .post-container img {
     height: 255px;
   }
 }
-body .post-container iframe {
-  height: 375px;
+body main .post-container iframe {
+  height: 400px;
 }
 @media (max-width: 425px) {
-  body .post-container iframe {
+  body main .post-container iframe {
     height: 255px;
   }
 }
-body .admin-dashboard {
+body main .post-container .user-opinion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  background-color: rgb(255, 217, 1);
+  padding: 10px;
+}
+body main .post-container .user-opinion .react {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body main .post-container .user-opinion .react svg {
+  font-size: 25px;
+  cursor: pointer;
+}
+body main .post-container .user-opinion .share-on {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+body main .post-container .user-opinion .share-on svg {
+  font-size: 25px;
+}
+body main .post-container .leave-a-comment .comment-input {
+  padding-bottom: 5px;
+}
+body main .post-container .leave-a-comment .comment-input form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+body main .post-container .leave-a-comment .comment-input form textarea {
+  padding: 10px;
+}
+body main .post-container .leave-a-comment .comment-input form div {
+  display: flex;
+  justify-content: end;
+}
+body main .post-container .leave-a-comment .comment-display {
+  height: 375px;
+  overflow-y: scroll;
+}
+body main .post-container .leave-a-comment .comment-display .comment {
+  padding: 10px;
+  background-color: rgb(255, 217, 1);
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+body main .post-container .leave-a-comment .comment-display .react {
+  display: flex;
+  gap: 5px;
+}
+body main .post-container .leave-a-comment .comment-display .react svg {
+  cursor: pointer;
+}
+body main .admin-dashboard {
   padding: 30px 80px;
 }
-body .admin-dashboard div {
+@media (max-width: 425px) {
+  body main .admin-dashboard {
+    padding: 20px;
+  }
+}
+body main .admin-dashboard div {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-body .admin-dashboard div a {
+body main .admin-dashboard div a {
   width: 100px;
   padding: 10px;
   background-color: #333333;

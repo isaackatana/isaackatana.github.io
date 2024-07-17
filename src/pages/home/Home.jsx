@@ -11,7 +11,7 @@ function Home() {
   return (
     <>
     <Helmet>
-      <title>Isaac Katana | Software Developer</title>
+      <title>Isaac Katana</title>
       <link rel="canonical" href={window.location.href} />
       <meta property="og:url" content={window.location.href} />
       <meta property="og:type" content="website" />

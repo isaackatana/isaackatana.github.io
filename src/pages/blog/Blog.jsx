@@ -8,10 +8,10 @@ function Blog() {
   return (
     <>
     <Helmet>
-      <title>Blog</title>
+      <title>Isaac's | Blog</title>
       <link rel="canonical" href={window.location.href} />
-      <meta property="og:description" content="Software Developer" />
-      <meta property="og:image" content="" />
+      <meta property="og:description" content="Articles written by Isaac Katana" />
+      <meta property="og:image" content={Img1} />
     </Helmet>
     <div className="blog">
       <div className="container">

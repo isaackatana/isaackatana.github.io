@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../assets/react.svg'
+import Logo from '../assets/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
@@ -22,7 +22,7 @@ function Header() {
             <Link to="/"><img src={Logo} alt="Logo" /></Link>
         </div>
 
-        <ul className={`menu burger ${isOpen ? 'active' : ''}`}>
+        <ul className={`menu ${isOpen ? 'active' : ''}`}>
             <NavLink to="/">Home</NavLink>
             <NavLink to="/blog">Blog</NavLink>
             <NavLink to="/portfolio">Portfolio</NavLink>
@@ -45,10 +45,10 @@ function Header() {
                 <FontAwesomeIcon icon={faUser}/>
             </div>
 
-            <div className='burger' onClick={toggleMenu}>
-                <div className='line1'></div>
-                <div className='line2'></div>
-                <div className='line3'></div>
+            <div className='burger' onClick={toggleMenu} >
+                <div className={`line1 ${isOpen ? 'active' : ''}`}></div>
+                <div className={`line2 ${isOpen ? 'active' : ''}`}></div>
+                <div className={`line3 ${isOpen ? 'active' : ''}`}></div>
             </div>
             
         </div>
