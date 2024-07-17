@@ -19,7 +19,7 @@ function PostContainer() {
         <Link to='/blog'><FontAwesomeIcon icon={faArrowLeft}/></Link>
     </div>
     <div className="post-container">
-        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, a?</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, a?</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, molestias. Exercitationem voluptate, natus dicta expedita ducimus eum iure, eos totam, perspiciatis ut dolor culpa error quo officiis animi dolorum nulla?</p>
         <img src="" alt="" />
         <div className="yt-video">

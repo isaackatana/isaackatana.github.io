@@ -539,7 +539,7 @@ body {
                         padding: 10px;
                         background: linear-gradient(transparent, #333333);
 
-                        h2,p {
+                        h3, p {
                             margin-bottom: 5px;
                             color: white;
                         }
@@ -574,7 +574,6 @@ body {
             padding: 30px 80px;
             display: flex;
             flex-direction: column;
-            gap: 10px;
 
             @include mobile(){
                 padding: 0px;
@@ -582,6 +581,7 @@ body {
             }
             
             h1, h2, h3, p {
+                padding-bottom: 10px;
                 @include mobile(){
                     padding: 10px;
                 }
@@ -590,6 +590,7 @@ body {
             img {
                 width: 100%;
                 height: 375px;
+                margin-bottom: 10px;
 
                 @include mobile(){
                     height: 255px;
@@ -599,6 +600,7 @@ body {
             .yt-video {
                 width: 100%;
                 height: 432px;
+                display: flex;
 
                 @include mobile(){
                     height: auto;
@@ -619,8 +621,9 @@ body {
                 justify-content: space-between;
                 gap: 5px;
                 background-color: rgb(255, 217, 1);
-                padding: 10px;
-                margin-bottom: 10px;
+                padding: 10px 30px;
+                margin: 10px 0 10px;
+                border-radius: 50px;
 
                 .react {
                     display: flex;

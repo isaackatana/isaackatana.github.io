@@ -477,7 +477,7 @@ body main .blog .container .post-preview .details {
   padding: 10px;
   background: linear-gradient(transparent, #333333);
 }
-body main .blog .container .post-preview .details h2, body main .blog .container .post-preview .details p {
+body main .blog .container .post-preview .details h3, body main .blog .container .post-preview .details p {
   margin-bottom: 5px;
   color: white;
 }
@@ -505,13 +505,15 @@ body main .post-container {
   padding: 30px 80px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 @media (max-width: 425px) {
   body main .post-container {
     padding: 0px;
     width: auto;
   }
+}
+body main .post-container h1, body main .post-container h2, body main .post-container h3, body main .post-container p {
+  padding-bottom: 10px;
 }
 @media (max-width: 425px) {
   body main .post-container h1, body main .post-container h2, body main .post-container h3, body main .post-container p {
@@ -521,6 +523,7 @@ body main .post-container {
 body main .post-container img {
   width: 100%;
   height: 375px;
+  margin-bottom: 10px;
 }
 @media (max-width: 425px) {
   body main .post-container img {
@@ -530,6 +533,7 @@ body main .post-container img {
 body main .post-container .yt-video {
   width: 100%;
   height: 432px;
+  display: flex;
 }
 @media (max-width: 425px) {
   body main .post-container .yt-video {
@@ -551,8 +555,9 @@ body main .post-container .user-opinion {
   justify-content: space-between;
   gap: 5px;
   background-color: rgb(255, 217, 1);
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 10px 30px;
+  margin: 10px 0 10px;
+  border-radius: 50px;
 }
 body main .post-container .user-opinion .react {
   display: flex;
