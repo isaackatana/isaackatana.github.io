@@ -441,7 +441,7 @@ body main .blog {
 }
 @media (max-width: 425px) {
   body main .blog {
-    padding: 20px;
+    padding: 10px;
   }
 }
 body main .blog .container {
@@ -509,8 +509,13 @@ body main .post-container {
 }
 @media (max-width: 425px) {
   body main .post-container {
-    padding: 20px;
+    padding: 0px;
     width: auto;
+  }
+}
+@media (max-width: 425px) {
+  body main .post-container h1, body main .post-container h2, body main .post-container h3, body main .post-container p {
+    padding: 10px;
   }
 }
 body main .post-container img {
@@ -530,62 +535,71 @@ body main .post-container iframe {
     height: 255px;
   }
 }
-body main .post-container .user-opinion {
+body main .post-container .wrapper {
+  padding: 0px;
+}
+@media (max-width: 425px) {
+  body main .post-container .wrapper {
+    padding: 10px;
+  }
+}
+body main .post-container .wrapper .user-opinion {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 5px;
   background-color: rgb(255, 217, 1);
   padding: 10px;
+  margin-bottom: 10px;
 }
-body main .post-container .user-opinion .react {
+body main .post-container .wrapper .user-opinion .react {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-body main .post-container .user-opinion .react svg {
+body main .post-container .wrapper .user-opinion .react svg {
   font-size: 25px;
   cursor: pointer;
 }
-body main .post-container .user-opinion .share-on {
+body main .post-container .wrapper .user-opinion .share-on {
   display: flex;
   align-items: center;
   gap: 5px;
   cursor: pointer;
 }
-body main .post-container .user-opinion .share-on svg {
+body main .post-container .wrapper .user-opinion .share-on svg {
   font-size: 25px;
 }
-body main .post-container .leave-a-comment .comment-input {
+body main .post-container .wrapper .leave-a-comment .comment-input {
   padding-bottom: 5px;
 }
-body main .post-container .leave-a-comment .comment-input form {
+body main .post-container .wrapper .leave-a-comment .comment-input form {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-body main .post-container .leave-a-comment .comment-input form textarea {
+body main .post-container .wrapper .leave-a-comment .comment-input form textarea {
   padding: 10px;
 }
-body main .post-container .leave-a-comment .comment-input form div {
+body main .post-container .wrapper .leave-a-comment .comment-input form div {
   display: flex;
   justify-content: end;
 }
-body main .post-container .leave-a-comment .comment-display {
+body main .post-container .wrapper .leave-a-comment .comment-display {
   max-height: 375px;
   overflow-y: scroll;
 }
-body main .post-container .leave-a-comment .comment-display .comment {
+body main .post-container .wrapper .leave-a-comment .comment-display .comment {
   padding: 10px;
   background-color: rgb(255, 217, 1);
   margin-bottom: 10px;
   border-radius: 10px;
 }
-body main .post-container .leave-a-comment .comment-display .react {
+body main .post-container .wrapper .leave-a-comment .comment-display .react {
   display: flex;
   gap: 5px;
 }
-body main .post-container .leave-a-comment .comment-display .react svg {
+body main .post-container .wrapper .leave-a-comment .comment-display .react svg {
   cursor: pointer;
 }
 body main .admin-dashboard {
