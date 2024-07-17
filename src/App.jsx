@@ -13,13 +13,7 @@ import PostContainer from './pages/blog/PostContainer'
 import Admin from './pages/admin/AdminDashboard'
 
 function App() {
-
-  fetch('http://localhost:5000/api/users')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error fetching data:', error));
-
-
+  
   return (
     <>
       <Header/>

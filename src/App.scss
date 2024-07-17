@@ -139,7 +139,7 @@ body {
             }
 
             .admin-profile {
-                background-color: white;
+                background-color: rgb(255, 217, 1);
                 width: 40px;
                 height: 40px;
                 display: flex;
@@ -149,7 +149,7 @@ body {
                 cursor: pointer;
 
                 svg {
-                    color: rgb(255, 217, 1);
+                    color: #333333;
                     font-size: 20px;
                 }
             }
@@ -570,7 +570,7 @@ body {
         }
 
         .post-container {
-            width: 60vw;
+            max-width: 800px;
             padding: 30px 80px;
             display: flex;
             flex-direction: column;
@@ -580,11 +580,13 @@ body {
                 padding: 0px;
                 width: auto;
             }
+            
             h1, h2, h3, p {
                 @include mobile(){
                     padding: 10px;
                 }
             }
+
             img {
                 width: 100%;
                 height: 375px;
@@ -594,11 +596,52 @@ body {
                 }
             }
 
-            iframe {
-                height: 400px;
+            .yt-video {
+                width: 100%;
+                height: 432px;
 
                 @include mobile(){
-                    height: 255px;
+                    height: auto;
+                }
+                iframe {
+                    width: 100%;
+                    height: 100%;
+
+                    @include mobile(){
+                        height: 255px;
+                    }
+                }
+            }
+
+            .user-opinion {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 5px;
+                background-color: rgb(255, 217, 1);
+                padding: 10px;
+                margin-bottom: 10px;
+
+                .react {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    svg {
+                        font-size: 25px;
+                        cursor: pointer;
+                    }
+                }
+
+                .share-on {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    cursor: pointer;
+
+                    svg {
+                        font-size: 25px;
+                    }
                 }
             }
 
@@ -609,39 +652,8 @@ body {
                     padding: 10px;
                 }
 
-                .user-opinion {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    gap: 5px;
-                    background-color: rgb(255, 217, 1);
-                    padding: 10px;
-                    margin-bottom: 10px;
-
-                    .react {
-                        display: flex;
-                        align-items: center;
-                        gap: 5px;
-
-                        svg {
-                            font-size: 25px;
-                            cursor: pointer;
-                        }
-                    }
-
-                    .share-on {
-                        display: flex;
-                        align-items: center;
-                        gap: 5px;
-                        cursor: pointer;
-
-                        svg {
-                            font-size: 25px;
-                        }
-                    }
-                }
-
                 .leave-a-comment {
+                    max-width: 400px;
 
                     .comment-input {
                         padding-bottom: 5px;
@@ -670,11 +682,19 @@ body {
                             background-color: rgb(255, 217, 1);
                             margin-bottom: 10px;
                             border-radius: 10px;
+
+                            h1, h2, h3, p {
+                                @include mobile(){
+                                    padding: 0px;
+                                }
+                            }
                         }
 
                         .react {
                             display: flex;
+                            justify-content: end;
                             gap: 5px;
+                            margin-top: 10px;
                             
                             svg {
                                 cursor: pointer;
