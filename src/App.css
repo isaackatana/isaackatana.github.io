@@ -474,7 +474,7 @@ body main .blog .container .post-preview .thumbnail img {
 body main .blog .container .post-preview .details {
   position: absolute;
   bottom: 0;
-  padding: 10px;
+  padding: 15px;
   background: linear-gradient(transparent, #000000);
 }
 body main .blog .container .post-preview .details h2, body main .blog .container .post-preview .details p {

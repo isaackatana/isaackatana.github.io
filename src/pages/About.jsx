@@ -5,7 +5,7 @@ function About() {
   return (
     <>
     <Helmet>
-      <title>About</title>
+      <title>About Katana</title>
       <link rel="canonical" href={window.location.href} />
       <meta property="og:description" content="Software Developer" />
       <meta property="og:image" content="" />
