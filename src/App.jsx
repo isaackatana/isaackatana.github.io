@@ -12,7 +12,8 @@ import Blog from './pages/blog/Blog'
 import PostContainer from './pages/blog/PostContainer'
 import Admin from './pages/admin/AdminDashboard'
 
-function App() {
+function App(articles) {
+
   
   return (
     <>
@@ -24,7 +25,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/about" element={<About/>}/>
-          <Route path='/blog/articles/post-container' element={<PostContainer/>}></Route>
+          <Route path='/blog/articles/:id' element={<PostContainer articles={articles}/>}></Route>
           <Route path='/admin' element={<Admin/>}></Route>
         </Routes>
       </main>

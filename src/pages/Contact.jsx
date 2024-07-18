@@ -5,7 +5,7 @@ function Contact() {
   return (
     <>
     <Helmet>
-      <title>Katana's Contact</title>
+      <title>Contact Katana </title>
       <link rel="canonical" href={window.location.href} />
       <meta property="og:description" content="Software Developer" />
       <meta property="og:image" content="" />

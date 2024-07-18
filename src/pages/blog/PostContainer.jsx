@@ -1,5 +1,5 @@
 import { faFacebookF, faWhatsapp, faXTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faArrowLeft, faHeart, faThumbsDown, faThumbsUp } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft, faThumbsUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Helmet } from 'react-helmet'
@@ -19,8 +19,8 @@ function PostContainer() {
         <Link to='/blog'><FontAwesomeIcon icon={faArrowLeft}/></Link>
     </div>
     <div className="post-container">
-        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, a?</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, molestias. Exercitationem voluptate, natus dicta expedita ducimus eum iure, eos totam, perspiciatis ut dolor culpa error quo officiis animi dolorum nulla?</p>
+        <h1>{}</h1>
+        <p>{}</p>
         <img src="" alt="" />
         <div className="yt-video">
             <iframe src="https://www.youtube.com/embed/LxcmF_Kk0Ho?list=PLrEDJjV85iv60M0AiFshvi7Xq3g3F48LJ" title="D-Berry - SO FINE  ft.Floh Namelok &amp; Gamerboy (lyric Visualizer)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
