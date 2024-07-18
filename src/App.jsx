@@ -11,6 +11,7 @@ import Portfolio from './pages/Portfolio'
 import Blog from './pages/blog/Blog'
 import PostContainer from './pages/blog/PostContainer'
 import Admin from './pages/admin/AdminDashboard'
+import NotFoundPage from './pages/NotFoundPage'
 
 function App(articles) {
 
@@ -20,6 +21,7 @@ function App(articles) {
       <Header/>
       <main>
         <Routes>
+        <Route path="*" element={<NotFoundPage/>}/>
           <Route path="/" element={<Home/>}/>
           <Route path="/blog" element={<Blog/>}/>
           <Route path="/portfolio" element={<Portfolio/>}/>

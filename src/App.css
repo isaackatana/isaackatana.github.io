@@ -470,14 +470,20 @@ body main .blog .container .post-preview .thumbnail img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 body main .blog .container .post-preview .details {
   position: absolute;
+  top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   padding: 15px;
   background: linear-gradient(transparent, #000000);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 body main .blog .container .post-preview .details h2, body main .blog .container .post-preview .details p {
   margin-bottom: 5px;
@@ -487,7 +493,7 @@ body main .blog .container .post-preview .details a {
   color: rgb(255, 217, 1);
 }
 body main .previous-page {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 80px;
   display: flex;
@@ -496,7 +502,8 @@ body main .previous-page {
 }
 @media (max-width: 425px) {
   body main .previous-page {
-    right: 20px;
+    top: 10px;
+    right: 10px;
   }
 }
 body main .previous-page a {
@@ -578,10 +585,15 @@ body main .post-container .user-opinion .react svg {
 body main .post-container .user-opinion .share-on {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   cursor: pointer;
 }
-body main .post-container .user-opinion .share-on svg {
+body main .post-container .user-opinion .share-on div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body main .post-container .user-opinion .share-on div svg {
   font-size: 25px;
 }
 body main .post-container .wrapper {
@@ -615,13 +627,29 @@ body main .post-container .wrapper .leave-a-comment .comment-display {
   overflow-y: scroll;
 }
 body main .post-container .wrapper .leave-a-comment .comment-display .comment {
-  padding: 10px;
-  background-color: rgb(255, 217, 1);
   margin-bottom: 10px;
   border-radius: 10px;
+  display: flex;
+  gap: 10px;
+}
+body main .post-container .wrapper .leave-a-comment .comment-display .comment .profile-pic {
+  background-color: #000000;
+  height: 40px;
+  border-radius: 25px;
+}
+body main .post-container .wrapper .leave-a-comment .comment-display .comment .profile-pic img {
+  width: 40px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .post-container .wrapper .leave-a-comment .comment-display .comment .user-comment {
+  background-color: rgb(255, 217, 1);
+  border-radius: 10px;
+  padding: 10px;
 }
 @media (max-width: 425px) {
-  body main .post-container .wrapper .leave-a-comment .comment-display .comment h1, body main .post-container .wrapper .leave-a-comment .comment-display .comment h2, body main .post-container .wrapper .leave-a-comment .comment-display .comment h3, body main .post-container .wrapper .leave-a-comment .comment-display .comment p {
+  body main .post-container .wrapper .leave-a-comment .comment-display .comment div h1, body main .post-container .wrapper .leave-a-comment .comment-display .comment div h2, body main .post-container .wrapper .leave-a-comment .comment-display .comment div h3, body main .post-container .wrapper .leave-a-comment .comment-display .comment div p {
     padding: 0px;
   }
 }
@@ -654,6 +682,25 @@ body main .admin-dashboard div a {
   color: white;
   display: flex;
   justify-content: center;
+}
+body main .not-found-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  background-color: #333333;
+  z-index: 100;
+}
+body main .not-found-page div {
+  color: white;
+  text-align: center;
+}
+body main .not-found-page div h1 {
+  font-size: 300px;
+}
+body main .not-found-page div a {
+  color: rgb(255, 217, 1);
 }
 body .newsletter {
   padding: 30px 80px;

@@ -31,9 +31,12 @@ function PostContainer() {
                 <div>0</div>
             </div>
             <section className='share-on'>
+                <h4>Share</h4>
+                <div>
                 <FontAwesomeIcon icon={faWhatsapp}/>
                 <FontAwesomeIcon icon={faFacebookF}/>
                 <FontAwesomeIcon icon={faXTwitter}/>
+                </div>
             </section>
         </section>
         <div className='wrapper'>
@@ -49,14 +52,17 @@ function PostContainer() {
                 </div>
                 <div className="comment-display">
                     <div className="comment">
-                        <h3>Isaac</h3>
-                        <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati culpa sapiente illum modi nam harum consequuntur cupiditate labore, cum adipisci sequi!
-                        </p>
-                        <section className='react'>
-                            <FontAwesomeIcon icon={faThumbsUp}/>
-                            <div>0</div>
-                        </section>
+                        <div className="profile-pic">
+                            <img src="" alt="" />
+                        </div>
+                        <div className='user-comment'>
+                            <h3>user</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, officia!</p>
+                            <section className='react'>
+                                <FontAwesomeIcon icon={faThumbsUp}/>
+                                <div>0</div>
+                            </section>
+                        </div>
                     </div>
                 </div>
             </section>
