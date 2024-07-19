@@ -493,7 +493,7 @@ body main .blog .container .post-preview .details a {
   color: rgb(255, 217, 1);
 }
 body main .previous-page {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 80px;
   display: flex;
@@ -571,6 +571,7 @@ body main .post-container .user-opinion {
 @media (max-width: 425px) {
   body main .post-container .user-opinion {
     border-radius: 0;
+    padding: 10px;
   }
 }
 body main .post-container .user-opinion .react {

@@ -26,10 +26,6 @@ function PostContainer() {
             <iframe src="https://www.youtube.com/embed/LxcmF_Kk0Ho?list=PLrEDJjV85iv60M0AiFshvi7Xq3g3F48LJ" title="D-Berry - SO FINE  ft.Floh Namelok &amp; Gamerboy (lyric Visualizer)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <section className='user-opinion'>
-            <div className="react">
-                <FontAwesomeIcon icon={faThumbsUp}/>
-                <div>0</div>
-            </div>
             <section className='share-on'>
                 <h4>Share</h4>
                 <div>
@@ -38,9 +34,12 @@ function PostContainer() {
                 <FontAwesomeIcon icon={faXTwitter}/>
                 </div>
             </section>
+            <div className="react">
+                <span>0</span>
+                <FontAwesomeIcon icon={faThumbsUp}/>
+            </div>
         </section>
         <div className='wrapper'>
-            
             <section className='leave-a-comment'>
                 <div className="comment-input">
                     <form action="">
@@ -56,11 +55,11 @@ function PostContainer() {
                             <img src="" alt="" />
                         </div>
                         <div className='user-comment'>
-                            <h3>user</h3>
+                            <h4>User</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, officia!</p>
                             <section className='react'>
+                                <span>0</span>
                                 <FontAwesomeIcon icon={faThumbsUp}/>
-                                <div>0</div>
                             </section>
                         </div>
                     </div>

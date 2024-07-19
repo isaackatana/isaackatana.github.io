@@ -560,7 +560,7 @@ body {
         }
 
         .previous-page {
-            position: fixed;
+            position: absolute;
             top: 20px;
             right: 80px;
             display: flex;
@@ -635,6 +635,7 @@ body {
 
                 @include mobile(){
                     border-radius: 0;
+                    padding: 10px;
                 }
 
                 .react {

@@ -28,7 +28,7 @@ function Blog() {
     <Helmet>
       <title>Katana's Blog</title>
       <link rel="canonical" href={window.location.href} />
-      <meta property="og:description" content="Articles written by Isaac Katana" />
+      <meta property="og:description" content="Software Development" />
       <meta property="og:image" content={Img1} />
     </Helmet>
     <div className="blog">
