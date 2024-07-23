@@ -1,19 +1,27 @@
+'use client'
 import { faFacebookF, faWhatsapp, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faArrowLeft, faThumbsUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import Blog from './Blog'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 function PostContainer() {
+
+    const {id} = useParams()
+
+    useEffect(()=>{
+        console.log('id', id);
+    },[])
+
   return (
     <>
     <Helmet>
-      <title>Post Container</title>
-      <link rel="canonical" href={window.location.href} />
-      <meta property="og:description" content="Software Developer" />
-      <meta property="og:image" content="" />
+    <title>Post Container</title>
+    <link rel="canonical" href={window.location.href} />
+    <meta property="og:description" content="Software Developer" />
+    <meta property="og:image" content="" />
     </Helmet>
     <div className='previous-page'>
         <Link to='/blog'><FontAwesomeIcon icon={faArrowLeft}/></Link>
