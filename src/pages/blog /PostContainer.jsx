@@ -40,7 +40,7 @@ function PostContainer(props) {
         <p>{blog.content}</p>
         <img src="" alt="" />
         <iframe src="" ></iframe>
-        <iframe src="" frameBorder={0}></iframe>
+        <iframe src="" frameborder="0"></iframe>
     </div>
     <section>
         <div className='user-opinion'>

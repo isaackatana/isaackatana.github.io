@@ -6,5 +6,4 @@ const api = axios.create({
   baseURL: config.baseURL
 });
 
-export const getBlogs = () => api.get('/blog');
 export const getBlogById = (id) => api.get(`/blog/articles/${id}`);

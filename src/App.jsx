@@ -10,8 +10,8 @@ import Contact from './pages/Contact'
 import Portfolio from './pages/Portfolio'
 import Admin from './pages/admin/AdminDashboard'
 import NotFoundPage from './pages/NotFoundPage'
-import Blog from './pages/blog /Blog'
-import PostContainer from './pages/blog /PostContainer'
+import Blog from './pages/blog/Blog.jsx'
+import PostContainer from './pages/blog/PostContainer.jsx'
 
 function App() {
   
