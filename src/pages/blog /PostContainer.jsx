@@ -6,7 +6,7 @@ import React, { useEffect, useState} from 'react'
 import { Helmet } from 'react-helmet'
 import Blog from './Blog'
 import { Link, useParams } from 'react-router-dom'
-import { getBlogById } from '../../Services/api'
+import { getBlogById } from '../../services/api'
 
 function PostContainer() {
 
