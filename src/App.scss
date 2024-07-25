@@ -614,129 +614,107 @@ body {
                 }
             }
             
-            .user-opinion {
+            
+        }
+        
+        .user-opinion {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px;
+            background-color: rgb(255, 217, 1);
+            padding: 10px 30px;
+            margin: 10px 0 10px;
+            border-radius: 50px;
+
+            @include mobile(){
+                border-radius: 0;
+                padding: 10px;
+            }
+
+            .share-on {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                gap: 5px;
-                background-color: rgb(255, 217, 1);
-                padding: 10px 30px;
-                margin: 10px 0 10px;
-                border-radius: 50px;
+                gap: 10px;
+                cursor: pointer;
 
-                @include mobile(){
-                    border-radius: 0;
-                    padding: 10px;
-                }
-
-                .react {
+                div {
                     display: flex;
                     align-items: center;
                     gap: 5px;
 
                     svg {
                         font-size: 25px;
-                        cursor: pointer;
-                    }
-                }
-
-                .share-on {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    cursor: pointer;
-
-                    div {
-                        display: flex;
-                        align-items: center;
-                        gap: 5px;
-
-                        svg {
-                            font-size: 25px;
-                        }
                     }
                 }
             }
+        }
 
-            .wrapper {
-                padding: 0px;
+        .wrapper {
+            padding: 0px;
 
-                @include mobile(){
-                    padding: 10px;
-                }
+            @include mobile(){
+                padding: 10px;
+            }
 
-                .leave-a-comment {
-                    max-width: 400px;
+            .leave-a-comment {
+                max-width: 400px;
 
-                    .comment-input {
-                        padding-bottom: 5px;
+                .comment-input {
+                    padding-bottom: 5px;
 
-                        form {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 5px;
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
 
-                            textarea {
-                                padding: 10px;
-                            }
-                            div {
-                                display: flex;
-                                justify-content: end;
-                            }
+                        textarea {
+                            padding: 10px;
                         }
-                    }
-
-                    .comment-display {
-                        max-height: 375px;
-                        overflow-y: scroll;
-
-                        
-                        .comment {
-                            margin-bottom: 10px;
-                            border-radius: 10px;
-                            display: flex;
-                            gap: 10px;
-
-                            .profile-pic {
-                                background-color: #000000;
-                                height: 40px;
-                                border-radius: 25px;
-
-                                img {
-                                    width: 40px;
-                                    height: auto;
-                                    object-fit: cover;
-                                }
-                            }
-
-                            .user-comment {
-                                background-color: rgb(255, 217, 1);
-                                border-radius: 10px;
-                                padding: 10px;
-                            }
-                            
-
-                            div {
-                                h1, h2, h3, p {
-                                    @include mobile(){
-                                        padding: 0px;
-                                    }
-                                }
-                            }
-                        }
-
-                        .react {
+                        div {
                             display: flex;
                             justify-content: end;
-                            gap: 5px;
-                            margin-top: 10px;
-                            
-                            svg {
-                                cursor: pointer;
+                        }
+                    }
+                }
+
+                .comment-display {
+                    max-height: 375px;
+                    overflow-y: scroll;
+
+                    
+                    .comment {
+                        margin-bottom: 10px;
+                        border-radius: 10px;
+                        display: flex;
+                        gap: 10px;
+
+                        .profile-pic {
+                            background-color: #000000;
+                            height: 40px;
+                            border-radius: 25px;
+
+                            img {
+                                width: 40px;
+                                height: auto;
+                                object-fit: cover;
                             }
                         }
 
+                        .user-comment {
+                            background-color: rgb(255, 217, 1);
+                            border-radius: 10px;
+                            padding: 10px;
+                        }
                         
+
+                        div {
+                            h1, h2, h3, p {
+                                @include mobile(){
+                                    padding: 0px;
+                                }
+                            }
+                        }
                     }
                 }
             }
