@@ -1,21 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import { articles } from './BlogData'
-import Img1 from "./imgs/img1.jpg"
+import { getBlogs } from '../../Services/api'
 
 function Blog() {
+  const [blogs, setBlogs] = useState(articles);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    getBlogs()
+      .then(response => setBlogs(response.data))
+      .catch(error => setError(error.message));
+  }, []);
+
   return (
     <>
     <Helmet>
       <title>Katana's Blog</title>
       <link rel="canonical" href={window.location.href} />
       <meta property="og:description" content="Software Development" />
-      <meta property="og:image" content={Img1} />
     </Helmet>
     <div className="blog">
       <div className="container">
-
         {articles.map((article, index) => (
           <div key={article.id} className="post-preview">
             <div className="thumbnail">
@@ -28,7 +35,6 @@ function Blog() {
             </div>
           </div>
         ))}
-
       </div>
     </div>
     </>

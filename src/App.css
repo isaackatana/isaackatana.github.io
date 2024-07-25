@@ -539,22 +539,12 @@ body main .post-container img {
     height: 255px;
   }
 }
-body main .post-container .yt-video {
+body main .post-container iframe {
   width: 100%;
   height: 432px;
-  display: flex;
 }
 @media (max-width: 425px) {
-  body main .post-container .yt-video {
-    height: auto;
-  }
-}
-body main .post-container .yt-video iframe {
-  width: 100%;
-  height: 100%;
-}
-@media (max-width: 425px) {
-  body main .post-container .yt-video iframe {
+  body main .post-container iframe {
     height: 255px;
   }
 }
