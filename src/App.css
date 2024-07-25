@@ -548,7 +548,15 @@ body main .post-container iframe {
     height: 255px;
   }
 }
-body main .user-opinion {
+body main section {
+  padding: 30px 80px;
+}
+@media (max-width: 425px) {
+  body main section {
+    padding: 10px;
+  }
+}
+body main section .user-opinion {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -559,79 +567,79 @@ body main .user-opinion {
   border-radius: 50px;
 }
 @media (max-width: 425px) {
-  body main .user-opinion {
+  body main section .user-opinion {
     border-radius: 0;
     padding: 10px;
   }
 }
-body main .user-opinion .share-on {
+body main section .user-opinion .share-on {
   display: flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
 }
-body main .user-opinion .share-on div {
+body main section .user-opinion .share-on div {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-body main .user-opinion .share-on div svg {
+body main section .user-opinion .share-on div svg {
   font-size: 25px;
 }
-body main .wrapper {
+body main section .wrapper {
   padding: 0px;
 }
 @media (max-width: 425px) {
-  body main .wrapper {
+  body main section .wrapper {
     padding: 10px;
   }
 }
-body main .wrapper .leave-a-comment {
+body main section .wrapper .leave-a-comment {
   max-width: 400px;
 }
-body main .wrapper .leave-a-comment .comment-input {
+body main section .wrapper .leave-a-comment .comment-input {
   padding-bottom: 5px;
 }
-body main .wrapper .leave-a-comment .comment-input form {
+body main section .wrapper .leave-a-comment .comment-input form {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-body main .wrapper .leave-a-comment .comment-input form textarea {
+body main section .wrapper .leave-a-comment .comment-input form textarea {
   padding: 10px;
 }
-body main .wrapper .leave-a-comment .comment-input form div {
+body main section .wrapper .leave-a-comment .comment-input form div {
   display: flex;
   justify-content: end;
 }
-body main .wrapper .leave-a-comment .comment-display {
+body main section .wrapper .leave-a-comment .comment-display {
   max-height: 375px;
   overflow-y: scroll;
 }
-body main .wrapper .leave-a-comment .comment-display .comment {
+body main section .wrapper .leave-a-comment .comment-display .comment {
   margin-bottom: 10px;
   border-radius: 10px;
   display: flex;
   gap: 10px;
 }
-body main .wrapper .leave-a-comment .comment-display .comment .profile-pic {
+body main section .wrapper .leave-a-comment .comment-display .comment .profile-pic {
   background-color: #000000;
   height: 40px;
   border-radius: 25px;
 }
-body main .wrapper .leave-a-comment .comment-display .comment .profile-pic img {
+body main section .wrapper .leave-a-comment .comment-display .comment .profile-pic img {
   width: 40px;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
-body main .wrapper .leave-a-comment .comment-display .comment .user-comment {
+body main section .wrapper .leave-a-comment .comment-display .comment .user-comment {
   background-color: rgb(255, 217, 1);
   border-radius: 10px;
   padding: 10px;
 }
 @media (max-width: 425px) {
-  body main .wrapper .leave-a-comment .comment-display .comment div h1, body main .wrapper .leave-a-comment .comment-display .comment div h2, body main .wrapper .leave-a-comment .comment-display .comment div h3, body main .wrapper .leave-a-comment .comment-display .comment div p {
+  body main section .wrapper .leave-a-comment .comment-display .comment div h1, body main section .wrapper .leave-a-comment .comment-display .comment div h2, body main section .wrapper .leave-a-comment .comment-display .comment div h3, body main section .wrapper .leave-a-comment .comment-display .comment div p {
     padding: 0px;
   }
 }

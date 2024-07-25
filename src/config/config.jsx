@@ -1,6 +1,6 @@
 // src/config/config.js
 const config = {
-    baseURL: 'http://localhost:5173'
+    baseURL: 'http://localhost:5173/'
 };
 
 export default config;
