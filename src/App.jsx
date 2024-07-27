@@ -4,10 +4,10 @@ import Footer from './components/Footer'
 import Newsletter from './components/Newsletter'
 import Home from './pages/home/Home'
 
-import { Routes, Route } from 'react-router-dom'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Portfolio from './pages/Portfolio'
+import { Routes, Route, useParams } from 'react-router-dom'
+import About from './pages/about/About'
+import Contact from './pages/contact/Contact'
+import Portfolio from './pages/portfolio/Portfolio'
 import Admin from './pages/admin/AdminDashboard'
 import NotFoundPage from './pages/NotFoundPage'
 import Blog from './pages/blog /Blog'
@@ -26,8 +26,8 @@ function App() {
           <Route path="/portfolio" element={<Portfolio/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/about" element={<About/>}/>
-          <Route path='/blog/articles/:id' element={<PostContainer/>}></Route>
-          <Route path='/admin' element={<Admin/>}></Route>
+          <Route path="/blog/articles/:id" element={<PostContainer/>}></Route>
+          <Route path="/admin" element={<Admin/>}></Route>
         </Routes>
       </main>
       <Newsletter/>

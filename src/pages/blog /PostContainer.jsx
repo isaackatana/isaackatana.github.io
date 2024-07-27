@@ -1,31 +1,32 @@
-'use client'
 import { faFacebookF, faWhatsapp, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState} from 'react'
 import { Helmet } from 'react-helmet'
 import Blog from './Blog'
-import {useParams } from 'react-router-dom'
-import { getBlogById } from '../../services/api'
+import axios from 'axios';
 
-function PostContainer(props) {
-
-    const { id } = useParams();
-    const [blog, setBlog] = useState(null);
+function PostContainer({ postId }) {
+    const [post, setPost] = useState(null);
+    const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        getBlogById(id)
-        .then(response => setBlog(response.data))
-        .catch(error => setError(error.message));
-    }, [id]);
+        const fetchPost = async () => {
+            try {
+                const response = await axios.get(`/blog/articles/${postId}?populate=*`);
+                console.log(response.data); // Log the response data
+                setPost(response.data); // Adjust based on the actual data structure
+              } catch (error) {
+                setError('Failed to fetch post.');
+                console.error('Error fetching post:', error);
+              } finally {
+                setLoading(false);
+              }
+        };
 
-    if (error) {
-        return <div>Error: {error}</div>;
-    }
+        fetchPost();
+    }, [postId]);
 
-    if (!blog) {
-        return <div>Loading...</div>;
-    }
 
   return (
     <>
@@ -36,8 +37,8 @@ function PostContainer(props) {
         <meta property="og:image" content="" />
     </Helmet>
     <div className="post-container">
-        <h1>{blog.title}</h1>
-        <p>{blog.content}</p>
+        <h1>{post.title}</h1>
+        <p>{post.content}</p>
         <img src="" alt="" />
         <iframe src="" ></iframe>
         <iframe src="" frameborder="0"></iframe>

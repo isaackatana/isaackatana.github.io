@@ -1,18 +1,14 @@
-import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
-import { articles } from './BlogData'
-import { getBlogs } from '../../services/api' 
+import { articles } from './BlogData' 
 
-function Blog() {
-  const [blogs, setBlogs] = useState(articles);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    getBlogs()
-      .then(response => setBlogs(response.data))
-      .catch(error => setError(error.message));
-  }, []);
+function Blog() { 
+  const options = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long', 
+    day: 'numeric' 
+  };
 
   return (
     <>
@@ -30,7 +26,7 @@ function Blog() {
             </div>
             <div className='details'>
               <h2>{article.title}</h2>
-              <p>{article.dateCreated}</p>
+              <p>{article.dateCreated.toLocaleDateString('en-KE', options)}</p>
               <Link key={article} to={`/blog/articles/${article.id}`}>Read more</Link>
             </div>
           </div>
