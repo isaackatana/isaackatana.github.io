@@ -3,31 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState} from 'react'
 import { Helmet } from 'react-helmet'
 import Blog from './Blog'
-import axios from 'axios';
 
-function PostContainer({ postId }) {
-    const [post, setPost] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-
-    useEffect(() => {
-        const fetchPost = async () => {
-            try {
-                const response = await axios.get(`/blog/articles/${postId}?populate=*`);
-                console.log(response.data); // Log the response data
-                setPost(response.data); // Adjust based on the actual data structure
-              } catch (error) {
-                setError('Failed to fetch post.');
-                console.error('Error fetching post:', error);
-              } finally {
-                setLoading(false);
-              }
-        };
-
-        fetchPost();
-    }, [postId]);
-
-
+function PostContainer() {
   return (
     <>
     <Helmet>
@@ -37,8 +14,8 @@ function PostContainer({ postId }) {
         <meta property="og:image" content="" />
     </Helmet>
     <div className="post-container">
-        <h1>{post.title}</h1>
-        <p>{post.content}</p>
+        <h1>{}</h1>
+        <p>{}</p>
         <img src="" alt="" />
         <iframe src="" ></iframe>
         <iframe src="" frameborder="0"></iframe>
