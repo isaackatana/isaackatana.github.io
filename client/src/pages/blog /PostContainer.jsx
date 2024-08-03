@@ -50,6 +50,7 @@ function PostContainer() {
         </div>
         <p>{post.content}</p>
         <img src={post.thumbnail} alt="" />
+        <p>{post.content}</p>
         <iframe src={post.video} frame-border='0'></iframe>
     </div>
     <section>

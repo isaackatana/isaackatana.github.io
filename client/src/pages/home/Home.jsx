@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import publicImg from "./imgs/img1.jpg"
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import Blog from '../blog /Blog'
 
 function Home() {
   
@@ -30,6 +31,7 @@ function Home() {
       </div>
 
     </div>
+    <Blog/>
     </>
   )
 }
