@@ -48,8 +48,8 @@ function PostContainer() {
             <h1>{post.title}</h1>
             <p>{new Date(post.dateCreated).toLocaleString('en-KE', options)}</p>
         </div>
-        <p>{post.content}</p>
         <img src={post.thumbnail} alt="" />
+        <p>{post.content}</p>
         <p>{post.content}</p>
         <iframe src={post.video} frame-border='0'></iframe>
     </div>
