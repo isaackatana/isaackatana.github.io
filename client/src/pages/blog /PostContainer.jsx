@@ -3,22 +3,54 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState} from 'react'
 import { Helmet } from 'react-helmet'
 import Blog from './Blog'
+import { useParams } from 'react-router-dom';
 
 function PostContainer() {
+    const { slug} = useParams();
+    const [post, setPost] = useState(null);
+
+    useEffect(() => {
+        fetch(`/api/posts/${slug}`)
+        .then((response) => {
+            if (response.ok) {
+            return response.json();
+            } else {
+            throw new Error('Post not found');
+            }
+        })
+        .then((data) => {
+            setPost(data);
+            document.title = data.title; // Update the document title to the post title
+        })
+        .catch((error) => console.error('Error fetching post:', error));
+    }, [slug]);
+
+    if (!post) {
+        return <div>Loading...</div>;
+    }
+
+    const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long', 
+        day: 'numeric' 
+    };
   return (
     <>
     <Helmet>
-        <title>Post Container</title>
+        <title>{post.slug}</title>
         <link rel="canonical" href={window.location.href} />
         <meta property="og:description" content="Software Developer" />
         <meta property="og:image" content="" />
     </Helmet>
     <div className="post-container">
-        <h1>{}</h1>
-        <p>{}</p>
-        <img src="" alt="" />
-        <iframe src="" ></iframe>
-        <iframe src="" frameborder="0"></iframe>
+        <div>
+            <h1>{post.title}</h1>
+            <p>{new Date(post.dateCreated).toLocaleString('en-KE', options)}</p>
+        </div>
+        <p>{post.content}</p>
+        <img src={post.thumbnail} alt="" />
+        <iframe src={post.video} frame-border='0'></iframe>
     </div>
     <section>
         <div className='user-opinion'>

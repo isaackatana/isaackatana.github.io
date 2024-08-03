@@ -1,8 +1,17 @@
 import { Helmet } from 'react-helmet'
-import { Link } from 'react-router-dom'
-import { articles } from './BlogData' 
+import { Link} from 'react-router-dom'
+import { useEffect, useState } from 'react';
 
 function Blog() { 
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    fetch('/api/posts')
+      .then((response) => response.json())
+      .then((data) => setPosts(data))
+      .catch((error) => console.error('Error fetching posts:', error));
+  }, []);
+
   const options = {
     weekday: 'long',
     year: 'numeric',
@@ -19,15 +28,15 @@ function Blog() {
     </Helmet>
     <div className="blog">
       <div className="container">
-        {articles.map((article, index) => (
-          <div key={article.id} className="post-preview">
+        {posts.map((post, index) => (
+          <div key={post.id} className="post-preview" post={post}  >
             <div className="thumbnail">
-              <img src={article.thumbnail} alt="" />
+              <img src={post.thumbnail} alt={`${post.title} thumbnail`} />
             </div>
             <div className='details'>
-              <h2>{article.title}</h2>
-              <p>{article.dateCreated.toLocaleDateString('en-KE', options)}</p>
-              <Link key={article} to={`/blog/articles/${article.id}`}>Read more</Link>
+              <h2>{post.title}</h2>
+              <p>{new Date(post.dateCreated).toLocaleString('en-KE', options)}</p>
+              <Link key={post} to={`/blog/posts/${post.slug}`} >Read more</Link>
             </div>
           </div>
         ))}
