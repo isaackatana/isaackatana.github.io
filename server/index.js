@@ -2,7 +2,7 @@
 const express = require('express');
 const slugify = require('slugify');
 const app = express();
-const PORT = 3002;
+const PORT = 3001;
 
 app.use(express.json());
 
@@ -28,10 +28,20 @@ const blogPosts = [
 ];
 
 app.get('/api/posts', (req, res) => {
-    const previews = blogPosts.map(post => ({ id: post.id, thumbnail: post.thumbnail, title: post.title, content: post.content,  video: post.video, dateCreated: post.dateCreated, slug: post.slug, }));
+    const previews = blogPosts.map(post => (
+        { 
+            id: post.id, 
+            thumbnail: post.thumbnail, 
+            title: post.title, 
+            content: post.content,  
+            video: post.video, 
+            dateCreated: post.dateCreated, 
+            slug: post.slug,
+        }
+    )
+    );
     res.json(previews);
 });
-
 
 app.get('/api/posts/:slug', (req, res) => {
     const postSlug = req.params.slug;
