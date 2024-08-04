@@ -75,7 +75,7 @@ function PostContainer() {
                     </form>
                 </div>
                 <div className="comment-display">
-                    <div className="comment">
+                    {/* <div className="comment">
                         <div className="profile-pic">
                             <img src="" alt="" />
                         </div>
@@ -83,7 +83,7 @@ function PostContainer() {
                             <h4>User</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, officia!</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
