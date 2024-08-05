@@ -6,11 +6,6 @@ const PORT = 3001;
 
 app.use(express.json());
 
-app.use((req, res, next) => {
-    res.setHeader("Content-Security-Policy", "default-src 'none'; img-src https://isaackatana-github-io.onrender.com");
-    next();
-});
-
 const blogPosts = [
     {
         id: 1,
