@@ -2,7 +2,7 @@
   "name": "isaac-katana",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd server && npm start",

@@ -1,10 +1,10 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node index.jsx",
+    "dev": "nodemon index.jsx"
   },
   "dependencies": {
     "axios": "^1.7.3",
