@@ -41,11 +41,11 @@ function Header() {
                 </div>
             </nav>
 
-            <Link to='/admin'>
+            {/* <Link to='/admin'>
                 <div className="admin-profile">
                     <FontAwesomeIcon icon={faUser}/>
                 </div>
-            </Link>
+            </Link> */}
 
             <div className='burger' onClick={toggleMenu} >
                 <div className={`line1 ${isOpen ? 'active' : ''}`}></div>

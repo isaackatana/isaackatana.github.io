@@ -57,7 +57,7 @@ body {
             @include mobile(){
                 flex-direction: column;
                 position: fixed;
-                top: 80px;
+                top: 69.1333px;
                 right: 0;
                 background-color: rgb(51, 51, 51);
                 width: 50vw;
@@ -68,6 +68,8 @@ body {
             a {
                 color: white;
                 padding: 15px;
+                text-decoration: none;
+                font-weight: bold;
 
                 &:hover {
                     color: rgb(255, 217, 1);
@@ -553,6 +555,7 @@ body {
 
                         a {
                             color: rgb(255, 217, 1);
+                            text-decoration: none;
                         }
                     }
                 }

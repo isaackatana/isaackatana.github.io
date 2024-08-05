@@ -6,9 +6,23 @@ const PORT = 3001;
 
 app.use(express.json());
 
+app.use((req, res, next) => {
+    res.setHeader("Content-Security-Policy", "default-src 'none'; img-src https://isaackatana-github-io.onrender.com");
+    next();
+});
+
 const blogPosts = [
     {
         id: 1,
+        thumbnail: 'https://www.byperth.com/wp-content/uploads/2018/04/stock-analyzer-project-architecture-1.jpg',
+        title: "The Benefits of Building an Application: Why It’s Worth the Investment",
+        content: "In today's digital world, building an application can be a game-changer for businesses, individuals, and organizations alike. Whether you're a startup founder, a seasoned entrepreneur, or simply passionate about technology, creating an app offers numerous advantages. Here’s a look at some of the key benefits:",
+        video: 'https://www.youtube.com/embed/LxcmF_Kk0Ho?si=smJIKxfwdkTYNwLN',
+        dateCreated: new Date(),
+        slug: slugify('The Benefits of Building an Application: Why It’s Worth the Investment', {lower:true})
+    },
+    {
+        id: 2,
         thumbnail: 'https://www.byperth.com/wp-content/uploads/2018/04/stock-analyzer-project-architecture-1.jpg',
         title: "The Benefits of Building an Application: Why It’s Worth the Investment",
         content: "In today's digital world, building an application can be a game-changer for businesses, individuals, and organizations alike. Whether you're a startup founder, a seasoned entrepreneur, or simply passionate about technology, creating an app offers numerous advantages. Here’s a look at some of the key benefits:",

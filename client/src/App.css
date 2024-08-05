@@ -57,7 +57,7 @@ body header .menu {
   body header .menu {
     flex-direction: column;
     position: fixed;
-    top: 80px;
+    top: 69.1333px;
     right: 0;
     background-color: rgb(51, 51, 51);
     width: 50vw;
@@ -68,6 +68,8 @@ body header .menu {
 body header .menu a {
   color: white;
   padding: 15px;
+  text-decoration: none;
+  font-weight: bold;
 }
 body header .menu a:hover {
   color: rgb(255, 217, 1);
@@ -491,6 +493,7 @@ body main .blog .container .post-preview .details h2, body main .blog .container
 }
 body main .blog .container .post-preview .details a {
   color: rgb(255, 217, 1);
+  text-decoration: none;
 }
 body main .previous-page {
   position: absolute;
