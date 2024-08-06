@@ -396,10 +396,12 @@ body main .contact {
   padding: 30px 80px;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 @media (max-width: 425px) {
   body main .contact {
-    padding: 20px;
+    padding: 10px;
+    flex-direction: column;
   }
 }
 body main .contact div ul {
@@ -428,6 +430,12 @@ body main .contact div form textarea {
 body main .contact div form div {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 425px) {
+  body main .contact div iframe {
+    width: 100%;
+    height: 350px;
+  }
 }
 body main .contact .container {
   height: 400px;
