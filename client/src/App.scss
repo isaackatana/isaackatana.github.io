@@ -457,6 +457,22 @@ body {
             }
 
             div {
+
+                ul {
+                    padding: 8px 0;
+
+                    li {
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                    }
+                }
+
+                h4 {
+                    margin-bottom: 5px;
+                }
+
                 form {
                     display: flex;
                     flex-direction: column;

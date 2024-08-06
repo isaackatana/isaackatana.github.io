@@ -1,3 +1,5 @@
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
@@ -12,6 +14,11 @@ function Contact() {
     </Helmet>
     <div className="contact">
       <div>
+        <ul>
+          <li><FontAwesomeIcon icon={faPhone}/>+254743195701</li>
+          <li><FontAwesomeIcon icon={faEnvelope}/>admin@isaackatana.com</li>
+        </ul>
+        <h4>Talk to us</h4>
         <form action="">
           <input type="text" placeholder='Name'/>
           <input type="tel" placeholder='Phone'/>

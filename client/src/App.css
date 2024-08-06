@@ -402,6 +402,18 @@ body main .contact {
     padding: 20px;
   }
 }
+body main .contact div ul {
+  padding: 8px 0;
+}
+body main .contact div ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body main .contact div h4 {
+  margin-bottom: 5px;
+}
 body main .contact div form {
   display: flex;
   flex-direction: column;
