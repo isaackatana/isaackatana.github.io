@@ -449,16 +449,35 @@ body {
 
         .contact {
             padding: 30px 80px;
+            display: flex;
+            justify-content: space-between;
         
             @include mobile(){
                 padding: 20px;
             }
-        
-            h1 {
-                padding-bottom: 20px;
-                color: rgb(51, 51, 51);
+
+            div {
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    input {
+                        padding: 8px;
+                    }
+
+                    textarea {
+                        padding: 8px;
+                    }
+
+                    div {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                }
             }
-        
+
             .container {
                 height: 400px;
                 position: relative;

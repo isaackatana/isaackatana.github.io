@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet'
 import publicImg from "./imgs/img1.jpg"
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import Blog from '../blog /Blog'
+import BlogList from '../blog /BlogList'
 
 function Home() {
   
@@ -31,7 +32,7 @@ function Home() {
       </div>
 
     </div>
-    <Blog/>
+    <BlogList/>
     </>
   )
 }

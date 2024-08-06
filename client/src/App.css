@@ -394,15 +394,28 @@ body main .about .container .music-videos .wrapper div iframe {
 }
 body main .contact {
   padding: 30px 80px;
+  display: flex;
+  justify-content: space-between;
 }
 @media (max-width: 425px) {
   body main .contact {
     padding: 20px;
   }
 }
-body main .contact h1 {
-  padding-bottom: 20px;
-  color: rgb(51, 51, 51);
+body main .contact div form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+body main .contact div form input {
+  padding: 8px;
+}
+body main .contact div form textarea {
+  padding: 8px;
+}
+body main .contact div form div {
+  display: flex;
+  justify-content: space-between;
 }
 body main .contact .container {
   height: 400px;

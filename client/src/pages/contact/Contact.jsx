@@ -10,7 +10,22 @@ function Contact() {
       <meta property="og:description" content="Software Developer" />
       <meta property="og:image" content="" />
     </Helmet>
-    <div>Contact</div>
+    <div className="contact">
+      <div>
+        <form action="">
+          <input type="text" placeholder='Name'/>
+          <input type="tel" placeholder='Phone'/>
+          <textarea name="" id="" placeholder='Message...'></textarea>
+          <div>
+            <div></div>
+            <button>Send</button>
+          </div>
+        </form>
+      </div>
+      <div>
+
+      </div>
+    </div>
     </>
   )
 }
